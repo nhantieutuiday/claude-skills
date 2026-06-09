@@ -1,4 +1,4 @@
 interface:
   display_name: "JS Logic Analyst"
   short_description: "Analyze frontend JS for hidden logic and vuln leads"
-  default_prompt: "Use $js-logic-analyst to analyze this JavaScript behavior and identify likely vulnerability paths."
+  default_prompt: "Use $js-logic-analyst to analyze this JavaScript behavior and identify likely vulnerability paths. Output reasoning, exploit paths, and validation plans in Vietnamese while preserving technical evidence verbatim."

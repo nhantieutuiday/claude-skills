@@ -1,4 +1,4 @@
 interface:
   display_name: "Vuln Triage Reasoner"
   short_description: "Reason from recon evidence to testable vuln hypotheses"
-  default_prompt: "Use $vuln-triage-reasoner to turn this recon evidence into ranked, testable vulnerability hypotheses."
+  default_prompt: "Use $vuln-triage-reasoner to turn this recon evidence into ranked, testable vulnerability hypotheses and confirmed findings when validation succeeds. Output triage, exploit reasoning, findings, impact, and remediation in Vietnamese while preserving technical evidence verbatim."

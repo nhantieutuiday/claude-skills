@@ -38,6 +38,23 @@ This repository contains reusable bug bounty hunting skills. When working in thi
    - Expected secure behavior and vulnerable signal.
    - Impact if confirmed and stop conditions.
 
+## Output Language
+
+Default all user-facing output to Vietnamese.
+
+Use Vietnamese for:
+
+- Recon summaries, triage reasoning, exploit paths, findings, impact, remediation, assumptions, open questions, and follow-up plans.
+- Report section prose and table explanations.
+- Status explanations such as `Confirmed`, `Ready`, `Needs test`, `Weak`, and `Discarded`.
+
+Keep these values in their original language/format:
+
+- URLs, endpoints, HTTP methods, headers, params, cookies, JSON keys, code identifiers, file paths, tool names, command output, request/response snippets, vulnerability class names, and program rule quotes.
+- Standard bug bounty terms where English is clearer, such as IDOR/BOLA, BFLA, SSRF, CSRF, CORS, OAuth, GraphQL, source map, mass assignment, open redirect.
+
+If the user explicitly requests English or another language for a specific report, follow that request for that output only.
+
 ## Required User Input
 
 Ask for missing context when needed. The best inputs are:

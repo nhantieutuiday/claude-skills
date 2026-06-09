@@ -1,4 +1,4 @@
 interface:
   display_name: "Recon Hunter"
   short_description: "Recon workflow for bug bounty target mapping"
-  default_prompt: "Use $recon-hunter to map this bug bounty target and produce scoped recon priorities."
+  default_prompt: "Use $recon-hunter to map this bug bounty target and produce scoped recon priorities. Output the report in Vietnamese while preserving technical terms, URLs, endpoints, commands, and evidence verbatim."
