@@ -66,7 +66,30 @@ Exploit reasoning is allowed before validation, but only as a bounded analysis a
 
 ### Tool Selection Rules
 
-Use whichever of these tools exists locally. Check availability with `command -v <tool>` when unsure.
+Use whichever appropriate tools exist locally. Do not assume a fixed ProjectDiscovery-only stack. On Kali Linux, first inventory the local toolset with `command -v` or `which`, then choose the lightest tool that fits the evidence and program rules.
+
+Tool choice must be context-aware:
+
+- Passive recon: prefer local files, supplied artifacts, `rg`, `jq`, `waybackurls`, `gau`, `github-search` style evidence, certificate/DNS data, and archives before active probing.
+- Live host discovery: prefer `httpx`, `curl`, `dnsx`, `dig`, `massdns`, or equivalent tools already installed.
+- Crawling/JS collection: prefer `katana`, `hakrawler`, `gospider`, browser exports, sitemap/robots parsing, and archive URLs depending on scope and rate limits.
+- Web content discovery: use `ffuf`, `feroxbuster`, `dirsearch`, `gobuster`, or similar only when focused, rate-limited, and allowed.
+- API testing: prefer `curl`, `httpie`, Burp exports, Postman/OpenAPI files, `jq`, and custom minimal request replay.
+- Template checks: use `nuclei` only with scoped targets and safe templates/severity filters.
+- Mobile analysis: use public app metadata first; use APK/IPA tools such as `apktool`, `jadx`, `aapt`, `mobSF`, `strings`, or `grep/rg` only when app files are provided or retrieval is authorized.
+- Secret scanning: use deterministic local scanning first (`rg`, parser output, `trufflehog`, `gitleaks` if present) and redact full values.
+- Exploit validation: prefer manual, minimal, reversible requests over automated exploit frameworks.
+
+When multiple tools can do the same job, choose by safety and evidence quality:
+
+1. User-provided/local artifacts.
+2. Passive public data.
+3. Single-request verification.
+4. Conservative crawling.
+5. Focused fuzzing/template checks.
+6. Manual safe validation.
+
+Record tool decisions in the report: tools used, purpose, important options, tools skipped, and why.
 
 On Windows/Codex Desktop, if `python` or `python3` is not in PATH, use the bundled Python runtime reported by the workspace dependency loader. In this workspace, the verified fallback is:
 
@@ -88,6 +111,7 @@ On Windows/Codex Desktop, if `python` or `python3` is not in PATH, use the bundl
 | Template checks | `nuclei` | Only safe templates and scoped targets; avoid intrusive templates unless explicitly allowed |
 | Request replay | `curl`, `httpie`, Burp exports | Verify specific endpoint behavior from evidence |
 | JSON/API handling | `jq`, `yq` | Parse API responses, OpenAPI specs, GraphQL JSON |
+| Kali alternatives | `feroxbuster`, `dirsearch`, `gobuster`, `gospider`, `httpie`, `apktool`, `jadx`, `aapt`, `trufflehog`, `gitleaks` | Use only when installed, in scope, and better suited than the default tool |
 
 ### Default Safe Command Patterns
 

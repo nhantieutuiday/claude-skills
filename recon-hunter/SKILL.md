@@ -11,6 +11,22 @@ Work only from explicit authorized scope. Treat out-of-scope hosts, third-party 
 
 Separate facts, inferences, and hypotheses. Never label an issue as vulnerable without enough evidence to reproduce or a clear next test.
 
+## Context-Aware Tooling
+
+When running on Kali Linux or another security workstation, do not limit recon to one vendor's tools. Inventory the available commands and select tools based on the current task, scope, and allowed impact.
+
+Prefer this decision model:
+
+- If the user supplied files, HAR, Burp history, JS bundles, source maps, APK/IPA, or API docs, analyze those first with local tools.
+- If the task is passive discovery, use archive, certificate, DNS, search, and local parsing tools before probing live systems.
+- If the task is liveness or fingerprinting, use single-purpose probes such as `httpx`, `curl`, `dnsx`, `dig`, or equivalent.
+- If the task is crawling, choose `katana`, `hakrawler`, `gospider`, browser exports, or sitemap parsing based on the site and rate limits.
+- If the task is discovery/fuzzing, choose `ffuf`, `feroxbuster`, `dirsearch`, `gobuster`, or similar only for narrow, scoped, rate-limited checks.
+- If the task is mobile, start with store metadata; analyze APK/IPA with `apktool`, `jadx`, `aapt`, `strings`, and local secret/endpoint extraction only when files or retrieval permission exist.
+- If the task is vulnerability validation, prefer minimal manual request replay over broad scanners or exploit frameworks.
+
+Always report which tools were present, which were used, which were skipped, and the reason.
+
 ## Workflow
 
 1. Normalize scope.
@@ -20,6 +36,7 @@ Separate facts, inferences, and hypotheses. Never label an issue as vulnerable w
 2. Build the asset graph.
    - Enumerate subdomains, resolved hosts, CDN edges, cloud buckets, certificate names, ASN/IP ranges, app stores, GitHub orgs, documentation portals, status pages, and support domains.
    - Mark each asset as `in_scope`, `probably_related`, `third_party`, or `out_of_scope`.
+   - Select tools from the local Kali/toolbox inventory instead of assuming a fixed stack.
 
 3. Fingerprint live surfaces.
    - Capture status code, title, server, framework, WAF/CDN, auth state, interesting headers, cookies, CSP, CORS, cache headers, and redirect chains.
