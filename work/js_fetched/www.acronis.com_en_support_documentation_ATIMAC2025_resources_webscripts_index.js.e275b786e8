@@ -1,0 +1,108 @@
+$(document).ready(function() {
+
+    var OFFSET = 15; // px
+
+    var $toolbarButtons = $('#body #contentBody .toolbar-buttons');
+
+    function recalculateTopOffset() {
+        if ($('#responsiveHeader').css('display') != 'none') {
+            var responsiveHeaderHeight = $('#responsiveHeader').height();
+            var toolbarButtonsHeight = $toolbarButtons.height();
+
+            $('#body #navigation').css('top', responsiveHeaderHeight);
+            $('#body').css('top', 0);
+            $toolbarButtons.css('top', responsiveHeaderHeight + OFFSET);
+            $('#body #contentBody #contentBodyInner').css('top', toolbarButtonsHeight + responsiveHeaderHeight + OFFSET);
+        } else {
+            var headerHeight = $('#header').height();
+            var docTypeHeight = isNaN($('.doc-type').height()) ? OFFSET : $('.doc-type').height();
+            var disclaimerHeight = isNaN($('.disclaimer').height()) ? OFFSET : $('.disclaimer').height();
+            var toolbarButtonsHeight = $toolbarButtons.height();
+            var totalHeight = headerHeight + docTypeHeight + disclaimerHeight;
+
+            $toolbarButtons.css('top', OFFSET);
+            $('#navigationResizeBar').css('top', totalHeight + OFFSET);
+            $('#navigation').css('top', 0);
+            $('#body').css('top', totalHeight + OFFSET);
+            $('#contentBodyInner').css('top', toolbarButtonsHeight + OFFSET + 5);
+        }
+    }
+
+    recalculateTopOffset();
+    $(window).resize(recalculateTopOffset);
+
+    // Override global LoadToc() function defined in MadCapTriPane.js:297
+    // Changes: expand tree of the opened topic if it has sub-topics
+    LoadToc = function () {
+        if (_TocPane != null)
+            return;
+
+        var $pane = $("#toc");
+        if (!$pane.length)
+            return;
+
+        $pane.addClass("loading");
+
+        var $ul = $('<ul class="tree" />');
+        $pane.append($ul);
+
+        _TocPane = new MadCap.WebHelp.TocPane("Toc", _HelpSystem, $ul[0], true);
+        _TocPane.Init(function () {
+            $pane.removeClass("loading");
+
+            // All links appear only when SyncTOC() function is called. SyncTOC() function uses AsyncForeach
+            // without a possibility to pass a callback, so it's only possible to fine tune the timeout.
+            setTimeout(function() {
+                var $selectedNode = $('li.tree-node-selected');
+                $selectedNode.removeClass('tree-node-collapsed');
+                $selectedNode.addClass('tree-node-expanded');
+            }, 700);
+        });
+
+        return $pane.parent();
+    }
+
+    // Override show/hide navigation click to avoid breaking the menu when resizing the window
+    // MadCapTriPane.js:656
+    ShowHideNavigation = function (which) {
+        var $navigation = $("#navigation");
+        var $navigationResizeBar = $("#navigationResizeBar");
+        var $contentBody = $("#contentBody");
+        var $button = $("#show-hide-navigation");
+
+        if (which === "show") {
+            $navigation.removeClass("nav-closed");
+            $navigationResizeBar.removeClass("nav-closed");
+            $contentBody.removeClass("nav-closed");
+            $button.attr("aria-expanded", "true");
+
+            if (_HelpSystem.IsResponsive) {
+                RestorePanes();
+            }
+        } else if (which === "hide") {
+            $navigation.addClass("nav-closed");
+            $navigationResizeBar.addClass("nav-closed");
+            $contentBody.addClass("nav-closed");
+            $button.attr("aria-expanded", "false");
+        }
+    }
+
+    // Override topic title to allow index.html have its own title
+    // MadCapTriPane.js:104
+    OnTopicLoad = function () {
+        MadCap.Utilities.MessageBus.PostMessageRequest(frames["topic"], "get-title", null, function (data) {
+            var title = $('title').attr("data-title");
+
+            if (!MadCap.String.IsNullOrEmpty(title))
+                title = ' – ' + title;
+
+            document.title = data[0] + title;
+        });
+
+        _TopicID = null;
+        MadCap.FeedbackHelper.UpdateRating();
+        MadCap.FeedbackHelper.UpdateCommentsInTopic();
+    }
+
+    $("#topic").on('load', OnTopicLoad);
+});

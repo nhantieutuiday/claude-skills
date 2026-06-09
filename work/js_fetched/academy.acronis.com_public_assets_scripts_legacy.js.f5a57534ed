@@ -1,0 +1,30 @@
+(function () {
+    if (String.prototype && String.prototype.matchAll) return;
+
+    if (window.sessionStorage && sessionStorage.getItem('unsupported-do-not-show-again')) return;
+
+    document.documentElement.className += ' s-unsupported-browser-active';
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: 'Acronis',
+        eventCategory: 'Interactions',
+        eventAction: 'Show Overlay',
+        eventLabel: 'Browser Not Supported',
+    });
+
+    function onClick(e) {
+        e = e || window.event;
+        var target = e.target || e.srcElement;
+        if (!target || target.id !== 'unsupported-continue') return;
+
+        document.documentElement.className = document.documentElement.className.replace('s-unsupported-browser-active', '');
+        if (window.sessionStorage) sessionStorage.setItem('unsupported-do-not-show-again', true);
+    }
+
+    if (document.addEventListener) {
+        document.addEventListener('click', onClick);
+    } else {
+        document.attachEvent('onclick', onClick);
+    }
+}());

@@ -1,0 +1,4 @@
+interface:
+  display_name: "JS Parser Hunter"
+  short_description: "Extract endpoints, params, APIs, and secrets from JS"
+  default_prompt: "Use $js-parser-hunter to parse these JavaScript files for endpoints, APIs, parameters, and hidden functions."

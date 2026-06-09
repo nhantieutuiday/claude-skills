@@ -1,0 +1,390 @@
+
+    <!DOCTYPE html><html lang="en-US" dir="ltr"><head><title>Acronis Support Portal</title><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://service.force.com/embeddedservice/ https://cdn.content.aws-dev2-uswest2.aws.sfdc.cl/ https://cdn.content.aws-prod1-useast1.aws.sfdc.cl/ https://payments.salesforce.com/ https://js.stripe.com/ https://www.paypal.com/sdk/js https://checkoutshopper-live.adyen.com/ https://checkoutshopper-test.adyen.com/ https://pal-test.adyen.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://pay.google.com import: blob: https://uip.canary.lwc.dev https://d.la2-c1cs-ph2.salesforceliveagent.com/chat/rest/Visitor/Settings.jsonp https://d.la2-c1cs-ph2.salesforceliveagent.com/chat/rest/EmbeddedService/EmbeddedServiceConfig.jsonp https://d.la2-c1cs-ph2.salesforceliveagent.com https://d.la1-c1cs-ph2.salesforceliveagent.com https://acronis--community.my.salesforce.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com/gtag/js https://d.la3-c1-ia6.salesforceliveagent.com/chat/rest/Visitor/Settings.jsonp https://d.la3-c1-ia6.salesforceliveagent.com/chat/rest/EmbeddedService/EmbeddedServiceConfig.jsonp https://d.la3-c1-ia6.salesforceliveagent.com/chat/rest/Visitor/Availability.jsonp https://d.la1-core1.sfdc-8tgtt5.salesforceliveagent.com/chat/rest/Visitor/Settings.jsonp https://d.la1-core1.sfdc-8tgtt5.salesforceliveagent.com/chat/rest/EmbeddedService/EmbeddedServiceConfig.jsonp https://d.la1-core1.sfdc-8tgtt5.salesforceliveagent.com/chat/rest/Visitor/Availability.jsonp https://td.doubleclick.net https://www.googletagmanager.com https://d.la13-core1.sfdc-8tgtt5.salesforceliveagent.com https://care.acronis.com https://acronis.file.force.com https://acronis.preview.salesforce-experience.com https://acronis.my.salesforce-scrt.com https://acronis.my.site.com; object-src 'self' www.google.com; style-src 'self' 'unsafe-inline' https://service.force.com/embeddedservice/ https://fonts.googleapis.com/css2 https://fonts.googleapis.com/css https://checkoutshopper-live.adyen.com/ https://checkoutshopper-test.adyen.com/ blob: https://vimeo.com http://i2.ytimg.com https://content.instrumentation.getconga.com https://data.instrumentation.getconga.com https://composer.congamerge.com https://care.acronis.com https://acronis.secure.force.com https://*.acronis.com https://*.do.acronis.fun https://service.force.com https://*.force.com https://cdn.managed-protection.com https://*.my.salesforce.com https://acronis.my.site.com https://staging.partners.acronis.com https://acronis.my.salesforce.com https://api.mixpanel.com https://analytics.google.com https://td.doubleclick.net https://d.la13-core1.sfdc-8tgtt5.salesforceliveagent.com https://acronis.file.force.com; img-src 'self' data: blob: https://acronis.my.salesforce.com https://acronis.file.force.com https://img.youtube.com https://i.ytimg.com https://i.vimeocdn.com https://login.salesforce.com/icons/ https://payments.salesforce.com/icons/ https://cdn.content.aws-prod1-useast1.aws.sfdc.cl/icons/ https://cdn.content.aws-dev2-uswest2.aws.sfdc.cl/icons/ https://*.adyen.com https://www.sandbox.paypal.com https://www.paypal.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://www.gstatic.com https://usa724.sfdc-8tgtt5.salesforce.com/icons/ https://vimeo.com http://i2.ytimg.com https://content.instrumentation.getconga.com https://data.instrumentation.getconga.com https://composer.congamerge.com https://services.congamerge.com https://app.launchdarkly.com https://www.acronis.com https://acronis--c.na84.content.force.com https://care.acronis.com https://acronis.secure.force.com https://*.acronis.com https://*.do.acronis.fun https://service.force.com https://*.force.com https://cdn.managed-protection.com https://*.my.salesforce.com https://www.linkedin.com https://acronis.my.site.com https://staging.partners.acronis.com https://api.mixpanel.com https://analytics.google.com https://td.doubleclick.net https://spinfo.acronis.com https://d.la13-core1.sfdc-8tgtt5.salesforceliveagent.com; media-src 'self' blob: https://vimeo.com http://i2.ytimg.com https://content.instrumentation.getconga.com https://data.instrumentation.getconga.com https://composer.congamerge.com https://care.acronis.com https://acronis.secure.force.com https://*.acronis.com https://*.do.acronis.fun https://service.force.com https://*.force.com https://cdn.managed-protection.com https://*.my.salesforce.com https://acronis.my.site.com https://acronis.my.salesforce.com https://api.mixpanel.com https://analytics.google.com https://td.doubleclick.net https://d.la13-core1.sfdc-8tgtt5.salesforceliveagent.com https://acronis.file.force.com; frame-src 'self' https://service.force.com/embeddedservice/ https://usa724.sfdc-8tgtt5.salesforce.com https://sfdc-link-preview-staging.sfdc.sh https://sfdc-link-preview.hk.salesforce.com https://cdn.embedly.com https://www.youtube.com https://player.vimeo.com https://play.vidyard.com https://player.cloudinary.com https://fast.wistia.net https://players.brightcove.net https://s1.adis.ws https://scormanywhere.secure.force.com https://appiniummastertrial.secure.force.com https://js.stripe.com/ https://www.paypal.com https://www.sandbox.paypal.com https://checkoutshopper-live.adyen.com/ https://checkoutshopper-test.adyen.com/ https://pal-test.adyen.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://pay.google.com https://*.a.forceusercontent.com/lightningmaps/ https://*.a.forceusercontent.com https://location.force.com https://acronis.file.force.com https://vimeo.com http://i2.ytimg.com https://content.instrumentation.getconga.com https://data.instrumentation.getconga.com https://composer.congamerge.com https://care.acronis.com https://acronis.secure.force.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://*.acronis.com https://*.do.acronis.fun https://service.force.com https://*.force.com https://cdn.managed-protection.com https://*.my.salesforce.com https://www.linkedin.com https://acronis.my.site.com https://staging.partners.acronis.com https://acronis.my.salesforce.com https://api.mixpanel.com https://analytics.google.com https://td.doubleclick.net https://d.la13-core1.sfdc-8tgtt5.salesforceliveagent.com https://demo.arcade.software; font-src 'self' data: https://fonts.gstatic.com/ https://vimeo.com http://i2.ytimg.com https://content.instrumentation.getconga.com https://data.instrumentation.getconga.com https://composer.congamerge.com https://care.acronis.com https://acronis.secure.force.com https://*.acronis.com https://*.do.acronis.fun https://service.force.com https://*.force.com https://cdn.managed-protection.com https://*.my.salesforce.com https://www.linkedin.com https://acronis.my.site.com https://staging.partners.acronis.com https://acronis.my.salesforce.com https://api.mixpanel.com https://analytics.google.com https://td.doubleclick.net https://d.la13-core1.sfdc-8tgtt5.salesforceliveagent.com https://acronis.file.force.com; connect-src 'self' https://www.paypal.com https://www.sandbox.paypal.com https://acronis.my.salesforce-scrt.com https://fonts.googleapis.com/css2 https://payments.salesforce.com/ https://cdn.content.aws-dev2-uswest2.aws.sfdc.cl/ https://checkoutshopper-live.adyen.com/ https://checkoutshopper-test.adyen.com/ https://js.stripe.com/ https://www.google.com/recaptcha/ https://*.api.salesforce.com https://o11y.sfproxy-core1.sfdc-8tgtt5.svc.sfdcfc.net/ui-telemetry https://vimeo.com http://i2.ytimg.com https://content.instrumentation.getconga.com https://data.instrumentation.getconga.com https://composer.congamerge.com https://care.acronis.com https://acronis.secure.force.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://*.acronis.com https://*.do.acronis.fun https://service.force.com https://*.force.com https://cdn.managed-protection.com https://*.my.salesforce.com https://acronis.my.site.com https://staging.partners.acronis.com https://acronis.my.salesforce.com https://api.mixpanel.com https://analytics.google.com https://td.doubleclick.net https://d.la13-core1.sfdc-8tgtt5.salesforceliveagent.com https://acronis.file.force.com https://demo.arcade.software"><link rel="shortcut icon" href="https://www.acronis.com/favicon.ico" /> 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HLFTTSZW7L"></script>
+<script async src="https://service.force.com/embeddedservice/5.0/esw.min.js"></script> 
+
+<script> 
+var chatFields;
+var userLang = "en_US";
+const allowedLanguages = ['es', 'it', 'fr', 'de', 'ja'];
+console.log('test');
+// Determine language from document
+let pageLang = (document.documentElement.lang || 'en').split('-')[0];
+if (allowedLanguages.includes(pageLang)) {
+    userLang = pageLang;
+}
+
+window.addEventListener('message', (event) => {
+	if (event.data?.type === 'CHAT_FIELDS' && event.data.fields) {
+    	const expectedOrigin = window.location.origin;
+		console.log('expectedOrigin: '+expectedOrigin);
+    	if (event.origin !== expectedOrigin) {
+        	console.warn('Message ignored: unexpected origin', event.origin);
+            return;
+        }
+        chatFields = event.data.fields;
+        console.log('Received chat fields:', chatFields);
+    }
+});
+  window.addEventListener('message', function(event) {
+                if (event.data.type === 'LWC_READY') {
+        console.log('LWC_READY ');
+         const iframe = document.querySelector('#embedded-messaging iframe');
+        console.log('iframe',iframe);
+                    if (iframe && iframe.contentWindow) {
+                        iframe.contentWindow.postMessage({ type: 'PRE_CHAT_FIELDS',chatFields: chatFields}, '*');
+                    }
+                 
+                }
+  });
+
+let userLat = null;
+let userLng = null;
+let messagingReady = false;
+
+// Function to set hidden fields
+function setHiddenFields() {
+    console.log('setHiddenFields:', userLat, userLng);
+    const referrer = document.referrer;
+    const url = window.location.href;
+    console.log('setHiddenFields url: ',url)
+
+    embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+        Language: userLang,
+        Referrer_URL: referrer,
+        Geolocation_Latitude: userLat !== null ? userLat.toString() : null,
+    	Geolocation_Longitude: userLng !== null ? userLng.toString() : null
+    });
+}
+
+// Get geolocation
+navigator.geolocation.getCurrentPosition(
+    (pos) => {
+        userLat = pos.coords.latitude;
+        userLng = pos.coords.longitude;
+        console.log('User location:', userLat, userLng);
+
+        // Only set hidden fields if messaging is ready
+        if (messagingReady) setHiddenFields();
+    },
+    (err) => {
+        console.error('Geolocation error:', err);
+
+        // Still set hidden fields if messaging is ready
+        if (messagingReady) setHiddenFields();
+    }
+);
+
+window.addEventListener("onEmbeddedMessageSent", async (event) => {
+    const entry = event.detail?.conversationEntry;
+    
+    if (!entry) return;
+
+    const isSystem = entry.sender?.role?.toLowerCase() === "system";
+     
+    if (isSystem) {
+        console.log("SYSTEM MESSAGE - IGNORED");
+        return;
+    }
+    
+    const payload = {
+        sessionId: entry.relatedRecords?.[0]
+    };
+
+     try {
+
+        const res = await fetch("/services/apexrest/messaging/event", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        });
+
+        const text = await res.text();
+
+    } catch (e) {
+        console.error("FETCH FAILED:", e);
+    }
+
+});   
+// Listen for Embedded Messaging ready
+window.addEventListener('onEmbeddedMessagingReady', () => {
+    messagingReady = true;
+
+    // Always set hidden fields, even if geolocation not yet available
+    setHiddenFields();
+});
+
+document.addEventListener("chatEvent", chatClickHandler, false);
+
+function chatClickHandler(ev) {
+    if (ev.detail.startChat === true) {
+        startChat();
+    }
+}
+
+function startChat() {
+    if (typeof embeddedservice_bootstrap !== "undefined" &&
+        embeddedservice_bootstrap.utilAPI &&
+        typeof embeddedservice_bootstrap.utilAPI.launchChat === "function") {
+		console.log('userLang:'+userLang);
+        embeddedservice_bootstrap.settings.language = userLang;
+        embeddedservice_bootstrap.settings.enableUserInputForConversationWithBot = false;
+        embeddedservice_bootstrap.utilAPI.launchChat();
+    }
+}
+ window.addEventListener('clear_messaging_session', () => {
+    console.log('Logout detected, clearing all localStorage...');
+
+    // Optional: end chat on Salesforce server side if needed
+   if (embeddedservice_bootstrap?.userVerificationAPI?.clearSession) {
+        embeddedservice_bootstrap.userVerificationAPI.clearSession(true).then(() => {
+            embeddedservice_bootstrap.utilAPI.removeAllComponents();
+            console.log('Chat session fully cleared');
+        });
+    }
+});
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HLFTTSZW7L');
+</script>
+
+<script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+	{'gtm.start': new Date().getTime(),event:'gtm.js'}
+    );var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TXBWFR5R');
+</script>
+
+<!-- Google analitycs scripts: track breadcrumbs clicks -->
+<script>
+    // The function overriding used for tracking of Page changes in Single Page Application (SPA). The function overrides the inbuilt MDN pushstate function and dispatch a push state event for customizations 
+    // do not edit this code
+    window.history.pushState = ( f => function pushState(){
+        var ret = f.apply(this, arguments);
+        window.dispatchEvent(new Event('pushstate'));
+        return ret;
+    })(history.pushState);
+</script>
+
+<script>  
+      document.addEventListener('analyticsSupport', function(e) {
+          let payload = JSON.parse(JSON.stringify(e.detail));
+          console.log('got analytics with detail: ' + payload)
+
+          gtag('event', payload.event, payload.detail);
+      });
+</script>
+
+<!-- SEO PART -->
+
+<!--SEO: CANONICALS INSERTION -->
+<script> 
+     function createAlternateCanonicalsForRegularUrls(languages) {
+          for (let langItem of languages) {
+                let link = document.createElement('link');
+                link.setAttribute('rel', 'alternate');
+                link.setAttribute('hreflang', langItem.toUpperCase());
+                link.setAttribute('href', window.location.origin + window.location.pathname + '?language=' + langItem);
+                link.setAttribute('data-owner', 'setSEOProperties');
+          		document.head.appendChild(link);
+          }
+     }
+    
+    
+      function createAlternateCanonicalsForArticle(canonicals) {
+          for (let canonicItem of canonicals) {
+                let link = document.createElement('link');
+                link.setAttribute('rel', 'alternate');
+                link.setAttribute('hreflang', canonicItem.language);
+                link.setAttribute('href', window.location.origin + '/s/article/' + canonicItem.url);
+                link.setAttribute('data-owner', 'setSEOProperties');
+          		document.head.appendChild(link);
+          }
+      }
+    
+      document.addEventListener('insert_canonicals', function(e) { 
+          let canonicals = JSON.parse(JSON.stringify(e.detail));
+          createAlternateCanonicalsForArticle(canonicals);
+      });
+</script>
+
+<!--SEO: CANONICALS UPDATE (article wasn't opened by direct url) -->
+<script>   
+      document.addEventListener('update_canonicals', function(e) {
+          console.log('in update_canonicals');
+          let old_canonicals = document.querySelectorAll('link[data-owner="setSEOProperties"]');
+            for (let oldCan of old_canonicals) {
+                oldCan.remove()
+            }
+          
+          let canonicals;
+          if (e && e.detail) {
+              canonicals = JSON.parse(JSON.stringify(e.detail));
+          }
+          // create canonical with language from path
+          let urlParams = new URLSearchParams(window.location.search);
+          let languageParam = urlParams.get('language'); 
+          let link = document.createElement('link');
+          link.setAttribute('rel', 'canonical');
+          link.setAttribute('hreflang', languageParam);
+          if (languageParam !== null) {
+              link.setAttribute('href', location.origin + location.pathname + '?language=' + languageParam);
+          } else {
+              link.setAttribute('href', location.origin + location.pathname + '?language=en_US');
+          }
+          link.setAttribute('data-owner', 'setSEOProperties');
+          document.head.appendChild(link); 
+	
+          // create x-default canonical 
+          let xlink = document.createElement('link');
+          xlink.setAttribute('rel', 'alternate');
+          xlink.setAttribute('hreflang', "x-default");
+          xlink.setAttribute('href', location.origin + location.pathname + '?language=en_US');
+          xlink.setAttribute('data-owner', 'setSEOProperties');
+          document.head.appendChild(xlink); 
+          
+          // create other (alternate) canonicals
+          if (window.location.href.indexOf('/s/article/') !== -1) {
+              createAlternateCanonicalsForArticle(canonicals);
+          } else {
+              // langs
+              createAlternateCanonicalsForRegularUrls(canonicals);
+          }
+      });
+    
+</script>
+
+
+
+
+<script>  
+      document.addEventListener('clear_description_metas', function(e) {
+            let metas = document.getElementsByTagName('meta')
+            for (let metaItem of metas) {
+          		if (metaItem && metaItem.getAttribute('data-owner') && metaItem.getAttribute('data-owner') === 'setSEOProperties') {
+                	metaItem.content = removeTagsAndSomeSymbols(metaItem.content)
+                }
+            }
+      }) 
+      function removeTagsAndSomeSymbols(html) {
+          // console.log('data-owner: ', html.getAttribute('data-owner'))
+          let tmp = document.createElement("div");
+          tmp.innerHTML = html;
+          let textresult = tmp.textContent || tmp.innerText || "";
+          textresult = textresult.replace(/[&\/\\%.'":*]/g, '')
+          return textresult;
+      }
+</script>
+
+<!--SEO: INSERT/UPDATE STRUCTURED DATA -->
+<script>  
+      document.addEventListener('upsert_structured_data', function(e) {
+          console.log('upsert_structured_data')
+          let article = JSON.parse(JSON.stringify(e.detail));
+          // console.log(`article: ${article}`)
+          updateStructuredData(article)
+      });
+    
+    
+    function updateStructuredData(record) {
+        // Generate new structured data
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "name": removeTagsAndSomeSymbols(record.Title),
+            "headline": removeTagsAndSomeSymbols(record.Title),
+            "datePublished": record.CreatedDateText__c,
+            "dateModified": record.LastPublishedDate__c,
+            "description": removeTagsAndSomeSymbols(record.Summary),
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": record.CanonicalURL__c
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Acronis"
+            }
+        };
+
+        const structuredDataScript = document.createElement('script');
+        structuredDataScript.type = 'application/ld+json';
+        structuredDataScript.textContent = JSON.stringify(structuredData, null, 2);
+
+        // Remove any old structured data
+        const oldStructuredData = document.querySelector('script[type="application/ld+json"]');
+        if (oldStructuredData) {
+            oldStructuredData.remove();
+        }
+
+        // Add new structured data
+        document.head.appendChild(structuredDataScript);
+    }
+</script> 
+
+<!-- SEO: add noindex/nofollow for certain article's urls -->
+<script>
+    
+let noIndexArticlesUrlsSet = new Set([
+	'service-notification-migration',
+	'FRA-data-center-migration-service-provider',
+	'FRA-data-center-migration-business',
+	'FRA-data-center-migration-individuals',
+	'Acronis-True-Image-Troubleshooting-issues-after-FRA-Data-center-migration',
+	'Acronis-Cyber-Protect-Troubleshooting-issues-after-FRA-Data-center-migration',
+	'Acronis-Cyber-Protect-Cloud-Troubleshooting-issues-after-FRA-Data-center-migration',
+]);
+
+let makePageNoIndexedIfFromSet = function() {
+    for (let item of noIndexArticlesUrlsSet) {
+        if (window.location.href.toLowerCase().indexOf(item.toLowerCase()) !== -1) {
+            let meta = document.createElement('meta'); 
+            meta.name = 'robots'; 
+            meta.content = 'noindex'; 
+            document.head.appendChild(meta);
+        }
+    }
+}
+makePageNoIndexedIfFromSet();    
+</script>
+
+<style>
+    body {
+        overflow: hidden;
+    }
+    html {
+        overflow: hidden;
+    }
+    
+    @media screen and (max-width: 767px) {
+        html, body {
+            overflow-y: scroll;
+        }
+
+        body {
+            padding-top: 0 !important;
+        }
+    }
+</style><meta name="viewport" content="initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, minimal-ui"/>
+<style>
+        .auraMsgMask, #auraErrorMask, body .auraLoadingBox {
+            display: none;
+        }
+
+        .spaError {
+            padding: 10px;
+        }
+
+        .spaErrorLink {
+            padding: 10px 0;
+            display: block
+        }
+
+        </style><style>:root{--tr_wc1-paletteIndigo10:rgb(32, 6, 71);--tr_wc1-popoverWalkthroughHeaderImage:;--tr_wc1-zIndexDialog:6000;--tr_wc1-colorPickerSelectorWidth:14rem;--tr_wc1-nubbinSizeDefault:1rem;--tr_wc1-paletteCloudBlue40:rgb(5, 98, 138);--tr_wc1-colorBackgroundContextBarInverseItemHover:rgba(255, 255, 255, 0.2);--tr_wc1-dropZoneSlotHeight:0.25rem;--tr_wc1-colorTextTabLabelSelected:rgb(1, 118, 211);--tr_wc1-colorStrokeBrandActive:rgb(3, 45, 96);--tr_wc1-paletteIndigo15:rgb(31, 9, 116);--tr_wc1-cardBodyPadding:0 1rem;--tr_wc1-varSpacingHorizontalSmall:0.75rem;--tr_wc1-tableColorBackgroundHeaderResizableHandle:rgb(174, 174, 174);--tr_wc1-colorBackgroundPathActiveHover:rgb(3, 45, 96);--tr_wc1-brandPrimaryTransparent:rgba(21, 137, 238, 0.1);--tr_wc1-brandPrimaryTransparent40:rgba(21, 137, 238, 0.4);--tr_wc1-colorBorderButtonDefault:rgb(201, 201, 201);--tr_wc1-paletteIndigo20:rgb(50, 29, 113);--tr_wc1-popoverColorText:rgb(201, 201, 201);--tr_wc1-paletteCloudBlue30:rgb(8, 73, 104);--tr_wc1-colorTextButtonDefaultActive:rgb(1, 118, 211);--tr_wc1-colorPickerSliderHeight:1.5rem;--tr_wc1-colorTextIconInverse:rgb(255, 255, 255);--tr_wc1-heightFooter:3.75rem;--tr_wc1-splitViewColorBorder:rgb(201, 201, 201);--tr_wc1-colorBorderRowSelectedHover:rgb(27, 150, 255);--tr_wc1-fontSizeTextXxSmall:.625rem;--tr_wc1-lineHeightHeading:1.25;--tr_wc1-cardHeaderMargin:0 0 0.75rem;--tr_wc1-paletteIndigo30:rgb(47, 44, 183);--tr_wc1-mqMediumLandscape:only screen and (min-width: 48em) and (min-aspect-ratio: 4/3);--tr_wc1-brandBandImageHeightMedium:12.5rem;--tr_wc1-illustrationColorSecondary:rgb(207, 233, 254);--tr_wc1-zIndexDefault:1;--tr_wc1-colorBorderSelectionActive:rgb(243, 243, 243);--tr_wc1-paletteCloudBlue20:rgb(2, 50, 72);--tr_wc1-utilityBarColorBackgroundNotificationFocus:rgb(201, 201, 201);--tr_wc1-colorTextIconDefaultDisabled:rgb(201, 201, 201);--tr_wc1-colorTextBrand:rgb(27, 150, 255);--tr_wc1-durationToastMedium:9.6s;--tr_wc1-colorBackgroundButtonIconActive:rgb(243, 243, 243);--tr_wc1-brandHeaderContrastWeak:rgb(145, 145, 145);--tr_wc1-colorBackgroundNotificationNew:rgb(243, 243, 243);--tr_wc1-brandHeaderContrastInverseActive:rgb(238, 238, 238);--tr_wc1-colorBackgroundInputCheckboxSelected:rgb(27, 150, 255);--tr_wc1-progressColorBorder:rgb(255, 255, 255);--tr_wc1-spacingXxxSmall:0.125rem;--tr_wc1-paletteIndigo40:rgb(58, 73, 218);--tr_wc1-colorBackgroundProgressRingContent:rgb(255, 255, 255);--tr_wc1-lineHeightButtonSmall:1.75rem;--tr_wc1-salesforceSansBoldItalicWoff:url(/_slds/fonts/v2.3.0/SalesforceSans-BoldItalic.woff);--tr_wc1-brandBackgroundDarkTransparent:rgba(221, 219, 218, 0);--tr_wc1-colorPickerThumbWidth:0.375rem;--tr_wc1-paletteCloudBlue10:rgb(0, 26, 40);--tr_wc1-brandHeaderIconActive:rgb(129, 129, 129);--tr_wc1-widthStageLeftCollapsed:4rem;--tr_wc1-paletteCloudBlue15:rgb(10, 38, 54);--tr_wc1-colorBorderOffline:rgb(68, 68, 68);--tr_wc1-colorBackgroundUtilityBarHover:rgb(243, 243, 243);--tr_wc1-sliderHandleColorBackgroundHover:rgb(1, 118, 211);--tr_wc1-colorTextIconInverseHint:rgba(255, 255, 255, 0.5);--tr_wc1-sizeMedium:20rem;--tr_wc1-brandPrimaryTransparent10:rgba(21, 137, 238, 0.1);--tr_wc1-colorBorderIconInverseHintHover:rgba(255, 255, 255, 0.75);--tr_wc1-colorTextDefault:rgb(3, 45, 96);--tr_wc1-paletteIndigo50:rgb(88, 103, 232);--tr_wc1-progressBarHeight:0.125rem;--tr_wc1-colorBackgroundWarning:#ffb75d;--tr_wc1-colorBackgroundBrandPrimaryActive:rgb(3, 45, 96);--tr_wc1-paletteBlue90:rgb(216, 230, 254);--tr_wc1-brandHeaderContrastCool:rgb(1, 68, 134);--tr_wc1-paletteCloudBlue80:rgb(144, 208, 254);--tr_wc1-paletteBlue95:rgb(238, 244, 255);--tr_wc1-colorBorderSelectionHover:rgb(27, 150, 255);--tr_wc1-zIndexPopup:5000;--tr_wc1-borderRadiusLarge:0.5rem;--tr_wc1-colorTextIconInverseHintHover:rgba(255, 255, 255, 0.75);--tr_wc1-popoverBrandBorderWidth:0.25rem;--tr_wc1-fontSizeHeadingXLarge:1.75rem;--tr_wc1-typingIconDotColorBackgroundGrayDark:rgb(201, 201, 201);--tr_wc1-paletteIndigo65:rgb(142, 155, 239);--tr_wc1-varSpacingLarge:1.5rem;--tr_wc1-pageHeaderSpacingMargin:0;--tr_wc1-fontSizeTextXLarge:1.25rem;--tr_wc1-paletteIndigo60:rgb(127, 140, 237);--tr_wc1-paletteCloudBlue70:rgb(26, 185, 255);--tr_wc1-welcomeMatColorActionShadow:rgba(0, 0, 0, 0.05);--tr_wc1-colorTextBrowser:rgb(255, 255, 255);--tr_wc1-welcomeMatSpacingInfo:7.75rem;--tr_wc1-mqLarge:only screen and (min-width: 64.0625em);--tr_wc1-paletteIndigo70:rgb(158, 169, 241);--tr_wc1-squareTappableSmall:2rem;--tr_wc1-colorTextActionLabel:rgb(116, 116, 116);--tr_wc1-paletteCloudBlue60:rgb(13, 157, 218);--tr_wc1-paletteBlue70:rgb(120, 176, 253);--tr_wc1-colorBorderTabActive:rgb(255, 255, 255);--tr_wc1-paletteCloudBlue65:rgb(8, 171, 237);--tr_wc1-globalnavigationItemHeightAccentFocus:4px;--tr_wc1-colorBorderDestructiveHover:rgb(186, 5, 23);--tr_wc1-buttonLineHeightTouch:2.65rem;--tr_wc1-colorTextCustomer:rgb(254, 147, 57);--tr_wc1-squareIconUtilitySmall:1rem;--tr_wc1-colorBackgroundModalButtonActive:rgba(0, 0, 0, 0.16);--tr_wc1-colorTextBrandPrimary:rgb(255, 255, 255);--tr_wc1-squareIconXSmallBoundary:1.25rem;--tr_wc1-widthToggle:3rem;--tr_wc1-paletteIndigo80:rgb(190, 199, 246);--tr_wc1-welcomeMatMinHeight:25rem;--tr_wc1-zIndexDocked:4;--tr_wc1-squareIconMediumBoundaryAlt:2.25rem;--tr_wc1-colorBorderSelection:rgb(1, 118, 211);--tr_wc1-paletteBlue80:rgb(170, 203, 255);--tr_wc1-paletteCloudBlue50:rgb(16, 124, 173);--tr_wc1-brandHeaderContrastActive:rgb(80, 80, 80);--tr_wc1-formLabelFontSize:0.75rem;--tr_wc1-colorTextActionLabelActive:rgb(3, 45, 96);--tr_wc1-colorBackgroundBackdropTint:rgb(243, 243, 243);--tr_wc1-durationSlowly:0.4s;--tr_wc1-colorBackgroundRowHover:rgb(243, 243, 243);--tr_wc1-popoverWalkthroughAltNubbinColorBackground:rgb(1, 118, 211);--tr_wc1-spinnerSizeSmall:1.25rem;--tr_wc1-sliderTrackColorBackgroundFill:rgb(27, 150, 255);--tr_wc1-welcomeMatWidth:52.0625rem;--tr_wc1-paletteIndigo95:rgb(241, 243, 251);--tr_wc1-paletteIndigo90:rgb(224, 229, 248);--tr_wc1-filesZIndexHover:5;--tr_wc1-colorTextPill:rgb(1, 118, 211);--tr_wc1-varSpacingSmall:0.75rem;--tr_wc1-heightDockedBar:2.5rem;--tr_wc1-paletteBlue50:rgb(1, 118, 211);--tr_wc1-colorTextTabLabelHover:rgb(1, 68, 134);--tr_wc1-fontSizeHeadingXSmall:0.75rem;--tr_wc1-colorStrokeDisabled:rgb(243, 243, 243);--tr_wc1-widthPathBorderCurrent:0.125rem;--tr_wc1-colorBackgroundButtonDefaultHover:rgb(243, 243, 243);--tr_wc1-varSpacingVerticalXxSmall:0.25rem;--tr_wc1-colorTextButtonDefaultHover:rgb(1, 118, 211);--tr_wc1-durationPromptly:0.2s;--tr_wc1-colorBorderPathCurrent:rgb(1, 68, 134);--tr_wc1-colorBackgroundButtonDefaultActive:rgb(243, 243, 243);--tr_wc1-colorTextStageLeft:rgb(243, 243, 243);--tr_wc1-colorBorderHint:rgb(3, 45, 96);--tr_wc1-colorTextPrimary:rgb(3, 45, 96);--tr_wc1-brandBandColorBackgroundSecondaryTransparent:rgba(0, 0, 0, 0);--tr_wc1-paletteBlue60:rgb(27, 150, 255);--tr_wc1-cardColorBackground:rgb(255, 255, 255);--tr_wc1-brandHeaderIcon:rgb(145, 145, 145);--tr_wc1-paletteBlue65:rgb(87, 163, 253);--tr_wc1-spacingLarge:1.5rem;--tr_wc1-pageHeaderColorBorder:rgba(0, 0, 0, 0);--tr_wc1-cardFooterMargin:0.75rem;--tr_wc1-fontSizeTextSmall:0.8125rem;--tr_wc1-colorTextLinkInverseActive:rgba(255, 255, 255, 0.5);--tr_wc1-durationToastShort:4.8s;--tr_wc1-lineHeightButton:1.875rem;--tr_wc1-panelDockedLeftShadow:1px 0 3px rgba(0,0,0,0.25);--tr_wc1-panelDockedRightShadow:-1px 0 3px 0 rgba(0,0,0,0.25);--tr_wc1-colorTextLinkPrimaryHover:rgb(1, 118, 211);--tr_wc1-shadowButton:0 1px 1px 0 rgba(0, 0, 0, 0.05);--tr_wc1-welcomeMatMaxHeight:37.5rem;--tr_wc1-colorBorderToggleChecked:rgb(255, 255, 255);--tr_wc1-shadowHeader:0 2px 4px rgba(0, 0, 0, 0.07);--tr_wc1-sizeXxLarge:60rem;--tr_wc1-colorBackgroundDockedPanelHeader:rgb(255, 255, 255);--tr_wc1-paletteBlue30:rgb(1, 68, 134);--tr_wc1-lineHeightSalespath:1.5rem;--tr_wc1-shadowDrag:0 2px 4px 0 rgba(0, 0, 0, 0.40);--tr_wc1-colorBackgroundPathExpanded:rgb(255, 255, 255);--tr_wc1-colorBackground:rgb(243, 243, 243);--tr_wc1-colorBackgroundInput:rgb(255, 255, 255);--tr_wc1-sizeSmall:15rem;--tr_wc1-userDefaultAvatar:url(/_slds/images/profile_avatar_200.png?cache=7bdcafae);--tr_wc1-colorTextButtonInverse:rgb(243, 243, 243);--tr_wc1-colorBackgroundInputCheckboxDisabled:rgb(201, 201, 201);--tr_wc1-tableColorTextHeader:rgb(68, 68, 68);--tr_wc1-paletteBlue40:rgb(11, 92, 171);--tr_wc1-cardColorBorder:rgb(201, 201, 201);--tr_wc1-squareIconUtilityMedium:1.25rem;--tr_wc1-colorBackgroundButtonSuccessHover:rgb(46, 132, 74);--tr_wc1-colorBorderButtonBrandDisabled:rgba(0, 0, 0, 0);--tr_wc1-fontSizeHeadingXxSmall:0.625rem;--tr_wc1-colorBackgroundButtonInverseActive:rgba(0, 0, 0, 0.24);--tr_wc1-illustrationEmptyStateEvents:url(/_slds/images/illustrations/empty-state-events.svg?cache=985b247a);--tr_wc1-colorBackgroundToggle:rgb(174, 174, 174);--tr_wc1-colorBackgroundStencil:rgb(243, 243, 243);--tr_wc1-welcomeMatCheckSize:0.625rem;--tr_wc1-colorTextButtonBrandHover:rgb(255, 255, 255);--tr_wc1-buttonColorBackgroundSecondary:rgba(255, 255, 255, 0.8);--tr_wc1-paletteBlue10:rgb(0, 22, 57);--tr_wc1-varSpacingVerticalLarge:1.5rem;--tr_wc1-colorBorderReminder:rgb(243, 243, 243);--tr_wc1-colorBrandDark:rgb(1, 118, 211);--tr_wc1-paletteBlue15:rgb(3, 35, 77);--tr_wc1-colorBorderBrandPrimaryFocus:rgb(1, 118, 211);--tr_wc1-salesforceSansItalicWoff:url(/_slds/fonts/v2.3.0/SalesforceSans-Italic.woff);--tr_wc1-colorBorderBrandPrimaryActive:rgb(3, 45, 96);--tr_wc1-datepickerColorTextDayAdjacentMonth:rgb(116, 116, 116);--tr_wc1-colorBorderErrorAlt:rgb(254, 143, 125);--tr_wc1-shadowReminder:0 2px 3px 0 rgba(0, 0, 0, 0.20);--tr_wc1-brandTextLinkActive:rgb(1, 68, 134);--tr_wc1-pageHeaderColorBackground:rgb(243, 243, 243);--tr_wc1-salesforceSansBoldWoff2:url(/_slds/fonts/v2.3.0/SalesforceSans-Bold.woff2);--tr_wc1-fontSizeHeadingLarge:1.5rem;--tr_wc1-colorBackgroundStencilAlt:rgb(243, 243, 243);--tr_wc1-paletteBlue20:rgb(3, 45, 96);--tr_wc1-elevationInverseShadow3Below:0 -3px 3px 0 rgba(0, 0, 0, 0.16) inset;--tr_wc1-varSpacingHorizontalXxSmall:0.25rem;--tr_wc1-colorBorderSeparatorAlt:rgb(201, 201, 201);--tr_wc1-colorPickerRangeHeight:5rem;--tr_wc1-colorBackgroundButtonIcon:rgba(0, 0, 0, 0);--tr_wc1-paletteTeal15:rgb(7, 40, 37);--tr_wc1-buttonIconColorBorderPrimary:rgb(255, 255, 255);--tr_wc1-brandAccessibleActive:rgb(1, 68, 134);--tr_wc1-paletteYellow80:rgb(252, 192, 3);--tr_wc1-zIndexSpinner:9050;--tr_wc1-colorBackgroundContextTabBarItem:rgb(255, 255, 255);--tr_wc1-fontWeightBold:700;--tr_wc1-paletteTeal10:rgb(7, 27, 18);--tr_wc1-colorBackgroundContextBarItemActive:rgb(255, 255, 255);--tr_wc1-shadowFocusInset:0 0 2px 2px #1b96ff inset;--tr_wc1-colorBackgroundAltInverse:rgb(3, 45, 96);--tr_wc1-colorBackgroundPathIncompleteHover:rgb(201, 201, 201);--tr_wc1-squareIconMediumContent:1rem;--tr_wc1-colorBackgroundContextBar:rgb(255, 255, 255);--tr_wc1-colorTextInverseHover:rgb(174, 174, 174);--tr_wc1-colorBackgroundInputActive:rgb(255, 255, 255);--tr_wc1-brandContrast:rgb(26, 27, 30);--tr_wc1-colorTextSecondary:rgb(116, 116, 116);--tr_wc1-fillHeaderButtonHover:rgb(1, 68, 134);--tr_wc1-fontFamilyText:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';--tr_wc1-welcomeMatCompleteIconSize:1.25rem;--tr_wc1-varSpacingXxLarge:3rem;--tr_wc1-paletteYellow95:rgb(251, 243, 224);--tr_wc1-paletteYellow90:rgb(249, 227, 182);--tr_wc1-brandBackgroundPrimary:rgb(250, 250, 249);--tr_wc1-paletteTeal20:rgb(2, 52, 52);--tr_wc1-progressRingWidth:0.1875rem;--tr_wc1-paletteYellow65:rgb(215, 147, 4);--tr_wc1-paletteYellow60:rgb(202, 133, 1);--tr_wc1-colorBorderInputCheckboxSelectedCheckmark:rgb(255, 255, 255);--tr_wc1-colorBorderCanvasElementSelectionHover:rgb(1, 68, 134);--tr_wc1-borderRadiusSmall:0.125rem;--tr_wc1-progressBarColorBackground:rgb(201, 201, 201);--tr_wc1-durationInstantly:0s;--tr_wc1-colorBackgroundToastSuccess:rgb(46, 132, 74);--tr_wc1-tabsFontWeight:400;--tr_wc1-colorBackgroundPost:rgb(243, 243, 243);--tr_wc1-colorTextPlaceholderInverse:rgb(243, 243, 243);--tr_wc1-colorTextInputIcon:rgb(174, 174, 174);--tr_wc1-sliderHandleShadow:rgba(0, 0, 0, 0.16) 0 2px 3px;--tr_wc1-paletteYellow70:rgb(228, 162, 1);--tr_wc1-fontWeightLight:300;--tr_wc1-colorTextError:rgb(234, 0, 30);--tr_wc1-varSpacingXxSmall:0.25rem;--tr_wc1-colorBorderInput:rgb(201, 201, 201);--tr_wc1-brandAccessible:rgb(1, 118, 211);--tr_wc1-pageColorBackgroundPrimary:rgb(255, 255, 255);--tr_wc1-cardShadow:none;--tr_wc1-lineClamp:3;--tr_wc1-welcomeMatWidthProgressBar:12.5rem;--tr_wc1-progressColorBackgroundShade:rgb(243, 243, 243);--tr_wc1-globalActionFillHover:rgb(1, 68, 134);--tr_wc1-illustrationEmptyStateAssistant:url(/_slds/images/illustrations/empty-state-assistant.svg?cache=127a789e);--tr_wc1-varSpacingHorizontalXSmall:0.5rem;--tr_wc1-colorPickerInputCustomHexFontSize:0.75rem;--tr_wc1-varSpacingMedium:1rem;--tr_wc1-colorBackgroundShadeDark:rgb(201, 201, 201);--tr_wc1-colorPickerSwatchesWidth:13.3rem;--tr_wc1-squareIconLargeBoundaryAlt:5rem;--tr_wc1-colorBorderInputDisabled:rgb(201, 201, 201);--tr_wc1-paletteYellow40:rgb(140, 75, 2);--tr_wc1-cardWrapperSpacing:1rem;--tr_wc1-colorBackgroundNotificationBadgeActive:rgb(3, 45, 96);--tr_wc1-colorBackgroundHighlight:rgb(250, 255, 189);--tr_wc1-colorBackgroundRowActive:rgb(243, 243, 243);--tr_wc1-componentSpacingMargin:0;--tr_wc1-colorBorderButtonFocusInverse:rgb(243, 243, 243);--tr_wc1-shadowButtonFocus:0 0 3px #0176d3;--tr_wc1-varSpacingVerticalXLarge:2rem;--tr_wc1-tableColorBackgroundHeaderHover:rgb(243, 243, 243);--tr_wc1-colorBackgroundDockedPanel:rgb(255, 255, 255);--tr_wc1-colorTextTertiary:rgb(116, 116, 116);--tr_wc1-varSpacingVerticalXxLarge:3rem;--tr_wc1-paletteYellow50:rgb(168, 100, 3);--tr_wc1-brandContrastActive:rgb(13, 14, 18);--tr_wc1-squareIconLargeContent:2rem;--tr_wc1-colorPickerSliderThumbColorBackground:rgb(243, 243, 243);--tr_wc1-inputStaticFontSize:0.8125rem;--tr_wc1-borderWidthThin:1px;--tr_wc1-fontWeightRegular:400;--tr_wc1-colorBackgroundButtonSuccess:rgb(69, 198, 90);--tr_wc1-splitViewColorBackgroundRowHover:rgb(255, 255, 255);--tr_wc1-paletteYellow20:rgb(79, 33, 0);--tr_wc1-bannerUserDefaultImage:;--tr_wc1-elevation8:8;--tr_wc1-brandDark:rgb(1, 118, 211);--tr_wc1-colorBackgroundPathCurrentHover:rgb(255, 255, 255);--tr_wc1-elevation0:0;--tr_wc1-elevation2:2;--tr_wc1-pageHeaderJoinedColorBorder:rgb(201, 201, 201);--tr_wc1-elevation4:4;--tr_wc1-durationPaused:3.2s;--tr_wc1-colorBrand:rgb(27, 150, 255);--tr_wc1-colorBackgroundPathComplete:#4bca81;--tr_wc1-progressColorBorderHover:rgb(1, 118, 211);--tr_wc1-spacingXxSmall:0.25rem;--tr_wc1-tableCellSpacing:0.5rem;--tr_wc1-colorBorderContextBarThemeDefault:rgb(13, 157, 218);--tr_wc1-colorBackgroundAnchor:rgb(243, 243, 243);--tr_wc1-paletteYellow30:rgb(111, 52, 0);--tr_wc1-shadowButtonFocusInverse:0 0 3px #f3f3f3;--tr_wc1-welcomeMatFontSizeInfoTitle:2.625rem;--tr_wc1-colorBorderLinkFocusInverse:rgb(243, 243, 243);--tr_wc1-borderRadiusCircle:50%;--tr_wc1-buttonColorBorderSecondary:rgba(255, 255, 255, 0.8);--tr_wc1-colorTextSuccessInverse:#4bca81;--tr_wc1-varSpacingXLarge:2rem;--tr_wc1-sizeXLarge:40rem;--tr_wc1-varSpacingHorizontalXxxSmall:0.125rem;--tr_wc1-elevation3Inset:-3;--tr_wc1-lineHeightTab:2.5rem;--tr_wc1-colorBackgroundDestructiveActive:#870500;--tr_wc1-colorTextLinkPrimaryActive:rgb(3, 45, 96);--tr_wc1-colorBackgroundPageHeader:rgb(255, 255, 255);--tr_wc1-colorBackgroundPill:rgb(255, 255, 255);--tr_wc1-fillBrandHover:rgb(1, 68, 134);--tr_wc1-colorBorderContextBarItem:rgba(0, 0, 0, 0.2);--tr_wc1-borderStrokeWidthThin:1px;--tr_wc1-progressColorBorderShade:rgb(243, 243, 243);--tr_wc1-heightHeader:2.75rem;--tr_wc1-shadowInlineEdit:0 2px 4px 4px rgba(0, 0, 0, 0.16);--tr_wc1-colorBackgroundNotificationBadgeHover:rgb(1, 68, 134);--tr_wc1-borderRadiusPill:15rem;--tr_wc1-colorTextButtonInverseDisabled:rgba(255, 255, 255, 0.5);--tr_wc1-sizeXxxSmall:3rem;--tr_wc1-colorBackgroundSuccessDarker:rgb(25, 78, 49);--tr_wc1-colorBackgroundToggleHover:rgb(147, 147, 147);--tr_wc1-paletteYellow15:rgb(46, 34, 4);--tr_wc1-paletteYellow10:rgb(40, 18, 2);--tr_wc1-cardSpacingSmall:0.75rem;--tr_wc1-illustrationEmptyStateTasks:url(/_slds/images/illustrations/empty-state-tasks.svg?cache=dc5e5e5b);--tr_wc1-brandBandScrimHeight:3.125rem;--tr_wc1-popoverWalkthroughColorBackground:rgb(0, 22, 57);--tr_wc1-colorBorderErrorDark:rgb(254, 143, 125);--tr_wc1-heightTappableSmall:2rem;--tr_wc1-colorBackgroundButtonBrandDisabled:rgb(243, 243, 243);--tr_wc1-colorBorderPrimary:rgb(201, 201, 201);--tr_wc1-colorGray1:rgb(255, 255, 255);--tr_wc1-fontSizeXLarge:1.25rem;--tr_wc1-varSquareIconMediumBoundary:2rem;--tr_wc1-colorGray5:rgb(221, 219, 218);--tr_wc1-colorGray4:rgb(236, 235, 234);--tr_wc1-colorGray3:rgb(243, 242, 242);--tr_wc1-colorGray2:rgb(250, 250, 249);--tr_wc1-opacity8:0.8;--tr_wc1-salesforceSansBoldItalicWoff2:url(/_slds/fonts/v2.3.0/SalesforceSans-BoldItalic.woff2);--tr_wc1-opacity5:0.5;--tr_wc1-squareIconGlobalIdentityIcon:1.25rem;--tr_wc1-colorBackgroundBrowser:rgb(116, 116, 116);--tr_wc1-colorTextIconInverseActive:rgb(255, 255, 255);--tr_wc1-shadowDocked:0 -2px 2px 0 rgba(0, 0, 0, 0.16);--tr_wc1-colorBackgroundInputError:rgb(253, 221, 227);--tr_wc1-colorGray9:rgb(112, 110, 107);--tr_wc1-colorGray8:rgb(150, 148, 146);--tr_wc1-colorGray7:rgb(176, 173, 171);--tr_wc1-colorGray6:rgb(201, 199, 197);--tr_wc1-colorTextLinkInverse:rgb(255, 255, 255);--tr_wc1-squareIconSmallBoundary:1.5rem;--tr_wc1-varSpacingHorizontalXLarge:2rem;--tr_wc1-colorBackgroundDark:rgb(243, 243, 243);--tr_wc1-colorTextWarningAlt:rgb(140, 75, 2);--tr_wc1-elevationInverseShadow2:0 -2px 2px 0 rgba(0, 0, 0, 0.16);--tr_wc1-elevationInverseShadow0:none;--tr_wc1-colorStrokeBrand:rgb(1, 118, 211);--tr_wc1-colorBackgroundToggleActive:rgb(1, 68, 134);--tr_wc1-colorBorderContextBarDivider:rgba(255, 255, 255, 0.2);--tr_wc1-zIndexToast:10000;--tr_wc1-colorBackgroundContextBarActionHighlight:rgba(255, 255, 255, 0.2);--tr_wc1-colorBackgroundBrandPrimaryFocus:rgb(1, 68, 134);--tr_wc1-buttonColorBackgroundBrandPrimary:rgb(1, 118, 211);--tr_wc1-brandHeaderContrastWarm:rgb(186, 5, 23);--tr_wc1-buttonColorTextPrimary:rgb(255, 255, 255);--tr_wc1-colorBrandDarker:rgb(1, 68, 134);--tr_wc1-colorBorderPathCurrentHover:rgb(3, 45, 96);--tr_wc1-colorTextButtonDefaultDisabled:rgb(201, 201, 201);--tr_wc1-colorBackgroundPathLost:rgb(234, 0, 30);--tr_wc1-einsteinHeaderBackground:url(/_slds/images/einstein-headers/einstein-header-background.svg?cache=ff7fa2ff);--tr_wc1-brandTextLink:rgb(1, 118, 211);--tr_wc1-sliderTrackColorBackground:rgb(243, 243, 243);--tr_wc1-colorContrastPrimary:rgb(243, 243, 243);--tr_wc1-groupDefaultAvatar:url(/_slds/images/group_avatar_200.png?cache=a0044dae);--tr_wc1-templateProfileGutters:0;--tr_wc1-sizeXxSmall:6rem;--tr_wc1-colorBackgroundPayload:rgb(243, 243, 243);--tr_wc1-paletteCloudBlue90:rgb(207, 233, 254);--tr_wc1-colorBackgroundPathActive:rgb(1, 68, 134);--tr_wc1-colorTextDestructive:rgb(234, 0, 30);--tr_wc1-squareIconLargeBoundary:3rem;--tr_wc1-colorBorderWarning:rgb(254, 147, 57);--tr_wc1-shadowSoftPrimaryHover:none;--tr_wc1-paletteCloudBlue95:rgb(234, 245, 254);--tr_wc1-spacingSmall:0.75rem;--tr_wc1-colorBackgroundErrorDark:rgb(186, 5, 23);--tr_wc1-brandHeaderContrastWeakDisabled:rgba(166, 166, 166, 0.25);--tr_wc1-squareIconMediumContentAlt:0.875rem;--tr_wc1-colorBackgroundButtonInverse:rgba(0, 0, 0, 0);--tr_wc1-brandHeader:rgb(255, 255, 255);--tr_wc1-lineHeightText:1.5;--tr_wc1-widthStageLeftExpanded:15rem;--tr_wc1-colorBackgroundError:rgb(254, 92, 76);--tr_wc1-colorTextButtonBrandActive:rgb(255, 255, 255);--tr_wc1-fontFamily:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';--tr_wc1-mqMedium:only screen and (min-width: 48em);--tr_wc1-brandDarkActive:rgb(37, 48, 69);--tr_wc1-colorBackgroundPathStepActionActive:rgb(0, 22, 57);--tr_wc1-neutrafaceDisplayWoff2:url(/_slds/fonts/NeutrafaceDisplay.woff2?cache=2.9.0);--tr_wc1-spacingMedium:1rem;--tr_wc1-colorTextModal:rgb(255, 255, 255);--tr_wc1-spinnerSizeLarge:2.75rem;--tr_wc1-carouselIndicatorColorBackgroundHover:rgb(243, 243, 243);--tr_wc1-shadowActionOverflowFooter:0 -2px 4px #f3f3f3;--tr_wc1-popoverWalkthroughHeaderColorBackground:rgb(3, 45, 96);--tr_wc1-colorBackgroundPathWon:rgb(46, 132, 74);--tr_wc1-lineHeightToggle:1.3rem;--tr_wc1-neutrafaceDisplayWoff:url(/_slds/fonts/NeutrafaceDisplay.woff?cache=2.9.0);--tr_wc1-cardFooterPadding:0 1rem 0.75rem;--tr_wc1-sliderHandleColorBackground:rgb(27, 150, 255);--tr_wc1-colorBackgroundErrorAlt:rgb(254, 143, 125);--tr_wc1-colorBackgroundIndicatorDot:rgb(3, 45, 96);--tr_wc1-chatMessageColorBackgroundInbound:rgb(243, 243, 243);--tr_wc1-elevationShadow0:none;--tr_wc1-heightPill:1.625rem;--tr_wc1-elevationShadow4:0 4px 4px 0 rgba(0, 0, 0, 0.16);--tr_wc1-elevationShadow2:0 2px 2px 0 rgba(0, 0, 0, 0.16);--tr_wc1-elevationShadow8:0 8px 8px 0 rgba(0, 0, 0, 0.16);--tr_wc1-varFontSize8:1.5rem;--tr_wc1-colorBackgroundButtonDefaultDisabled:rgb(255, 255, 255);--tr_wc1-varFontSize7:1.25rem;--tr_wc1-elevationInverseShadow8:0 -8px 8px 0 rgba(0, 0, 0, 0.16);--tr_wc1-varFontSize9:1.75rem;--tr_wc1-brandBandColorBackgroundPrimary:rgba(0, 0, 0, 0);--tr_wc1-colorTextButtonBrand:rgb(255, 255, 255);--tr_wc1-elevationInverseShadow4:0 -4px 4px 0 rgba(0, 0, 0, 0.16);--tr_wc1-colorBackgroundToggleActiveHover:rgb(1, 68, 134);--tr_wc1-welcomeMatBackgroundImageInfo:url(/_slds/images/welcome-mat/bg-info@2x.png?cache=ddb4e82f);--tr_wc1-varFontSize2:0.75rem;--tr_wc1-varFontSize1:0.625rem;--tr_wc1-varFontSize4:0.875rem;--tr_wc1-pageHeaderSpacingRow:0.75rem 1rem;--tr_wc1-varFontSize3:0.8125rem;--tr_wc1-varFontSize6:1.125rem;--tr_wc1-varFontSize5:1rem;--tr_wc1-varSpacingVerticalMedium:1rem;--tr_wc1-pageHeaderSpacingPadding:1rem;--tr_wc1-colorTextModalButton:rgb(116, 116, 116);--tr_wc1-colorBackgroundPrimary:rgb(255, 255, 255);--tr_wc1-colorTextInputFocusInverse:rgb(3, 45, 96);--tr_wc1-colorBackgroundScrollbarTrack:rgb(201, 201, 201);--tr_wc1-paletteNeutral70:rgb(174, 174, 174);--tr_wc1-brandPrimaryActive:rgb(1, 118, 211);--tr_wc1-popoverWalkthroughAltImage:;--tr_wc1-nubbinTriangleOffset:-0.1875rem;--tr_wc1-salesforceSansLightWoff:url(/_slds/fonts/v2.3.0/SalesforceSans-Light.woff);--tr_wc1-colorBorderSuccessDark:rgb(46, 132, 74);--tr_wc1-mqHighRes:only screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2),screen and (min-resolution: 192dpi),screen and (min-resolution: 2dppx);--tr_wc1-brandBandColorBackgroundPrimaryTransparent:rgba(0, 0, 0, 0);--tr_wc1-colorBackgroundContextBarInverseItemActive:rgba(255, 255, 255, 0.4);--tr_wc1-colorTextButtonDefaultHint:rgb(174, 174, 174);--tr_wc1-salesforceSansItalicWoff2:url(/_slds/fonts/v2.3.0/SalesforceSans-Italic.woff2);--tr_wc1-paletteGreen60:rgb(59, 167, 85);--tr_wc1-heightContextBar:2.5rem;--tr_wc1-colorBackgroundOrgSwitcherArrow:rgb(0, 22, 57);--tr_wc1-paletteGreen65:rgb(65, 182, 88);--tr_wc1-brandHeaderContrastInverse:rgb(255, 255, 255);--tr_wc1-notificationColorBackgroundInverse:rgb(116, 116, 116);--tr_wc1-colorBackgroundButtonIconDisabled:rgb(255, 255, 255);--tr_wc1-paletteNeutral60:rgb(147, 147, 147);--tr_wc1-colorBorderContextBarThemeDefaultAlt:rgb(243, 243, 243);--tr_wc1-fillBrand:rgb(1, 118, 211);--tr_wc1-colorBackgroundInputCheckbox:rgb(255, 255, 255);--tr_wc1-colorBorder:rgb(201, 201, 201);--tr_wc1-squareIconSmall:1rem;--tr_wc1-varSpacingHorizontalMedium:1rem;--tr_wc1-illustrationColorPrimary:rgb(144, 208, 254);--tr_wc1-varSpacingVerticalXSmall:0.5rem;--tr_wc1-colorTextPlaceholder:rgb(116, 116, 116);--tr_wc1-einsteinHeaderBackgroundColor:rgb(144, 208, 254);--tr_wc1-paletteGreen70:rgb(69, 198, 90);--tr_wc1-brandHeaderContrast:rgb(94, 94, 94);--tr_wc1-inputStaticColor:rgb(24, 24, 24);--tr_wc1-paletteNeutral90:rgb(229, 229, 229);--tr_wc1-spacingXxLarge:3rem;--tr_wc1-paletteGreen90:rgb(205, 239, 196);--tr_wc1-shadowDropDown:0 2px 3px 0 rgba(0, 0, 0, 0.16);--tr_wc1-paletteNeutral95:rgb(243, 243, 243);--tr_wc1-colorBackgroundModal:rgb(255, 255, 255);--tr_wc1-elevationShadow3Below:0 3px 3px 0 rgba(0, 0, 0, 0.16) inset;--tr_wc1-paletteRed80:rgb(254, 184, 171);--tr_wc1-sliderTrackWidth:100%;--tr_wc1-elevation32:32;--tr_wc1-globalHeaderColorBackground:rgb(255, 255, 255);--tr_wc1-spacingXLarge:2rem;--tr_wc1-paletteGreen80:rgb(145, 219, 139);--tr_wc1-colorBorderInputActive:rgb(27, 150, 255);--tr_wc1-varSpacingXSmall:0.5rem;--tr_wc1-paletteNeutral80:rgb(201, 201, 201);--tr_wc1-colorBackgroundModalButton:rgba(0, 0, 0, 0.07);--tr_wc1-colorBorderPathDivider:rgb(255, 255, 255);--tr_wc1-colorTextIconDefault:rgb(116, 116, 116);--tr_wc1-zIndexDeepdive:-99999;--tr_wc1-elevation16:16;--tr_wc1-paletteRed90:rgb(254, 222, 216);--tr_wc1-globalnavigationItemHeightAccentActive:3px;--tr_wc1-templateGutters:0;--tr_wc1-paletteRed95:rgb(254, 241, 238);--tr_wc1-buttonColorBorderBrandPrimary:rgb(1, 118, 211);--tr_wc1-buttonIconBoundaryTouch:2.75rem;--tr_wc1-brandBackgroundPrimaryTransparent:rgba(176, 196, 223, 0);--tr_wc1-fillHeaderButtonFocus:rgb(1, 118, 211);--tr_wc1-colorBorderError:rgb(234, 0, 30);--tr_wc1-colorTextLinkHover:rgb(1, 68, 134);--tr_wc1-paletteGreen95:rgb(235, 247, 230);--tr_wc1-einsteinHeaderFigure:url(/_slds/images/einstein-headers/einstein-figure.svg?cache=ec975fb1);--tr_wc1-colorBorderRowSelected:rgb(1, 118, 211);--tr_wc1-colorStrokeBrandHover:rgb(1, 118, 211);--tr_wc1-paletteNeutral30:rgb(68, 68, 68);--tr_wc1-varSpacingVerticalXxxSmall:0.125rem;--tr_wc1-paletteHotOrange10:rgb(40, 18, 2);--tr_wc1-colorTextButtonBrandDisabled:rgb(255, 255, 255);--tr_wc1-squareIconXSmallContent:0.5rem;--tr_wc1-varFontSize10:2rem;--tr_wc1-paletteRed60:rgb(254, 92, 76);--tr_wc1-varFontSize11:2.625rem;--tr_wc1-paletteRed65:rgb(254, 119, 101);--tr_wc1-buttonBorderRadius:.25rem;--tr_wc1-squareTappableXSmall:1.5rem;--tr_wc1-colorBackgroundGuidance:rgb(255, 255, 255);--tr_wc1-colorTextContextBarInverse:rgb(255, 255, 255);--tr_wc1-paletteNeutral20:rgb(46, 46, 46);--tr_wc1-fontFamilyHeading:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';--tr_wc1-paletteRed70:rgb(254, 143, 125);--tr_wc1-brandHeaderContrastCoolActive:rgb(1, 68, 134);--tr_wc1-borderWidthThick:2px;--tr_wc1-pageHeaderShadow:none;--tr_wc1-spinnerSizeXxSmall:0.5rem;--tr_wc1-tableColorBackgroundHeader:rgb(255, 255, 255);--tr_wc1-pageHeaderColorBackgroundAlt:rgb(255, 255, 255);--tr_wc1-colorBorderBrandPrimaryHover:rgb(1, 118, 211);--tr_wc1-colorTextTabLabelActive:rgb(3, 45, 96);--tr_wc1-paletteNeutral50:rgb(116, 116, 116);--tr_wc1-colorBackgroundTempModalTint:rgba(126, 140, 153, 0.8);--tr_wc1-fontSizeMedium:1rem;--tr_wc1-colorBorderButtonBrand:rgb(1, 118, 211);--tr_wc1-paletteHotOrange30:rgb(126, 38, 0);--tr_wc1-paletteRed40:rgb(186, 5, 23);--tr_wc1-brandBandImageHeightSmall:6rem;--tr_wc1-colorTextInverseWeak:rgb(174, 174, 174);--tr_wc1-colorTextInverse:rgb(255, 255, 255);--tr_wc1-shadowLinkFocusInverse:0 0 3px #f3f3f3;--tr_wc1-squareIconXxSmallBoundary:1rem;--tr_wc1-lineHeightReset:1;--tr_wc1-verticalNavigationColorBackgroundShadeRowActive:rgb(243, 243, 243);--tr_wc1-colorBackgroundTempModal:rgba(126, 140, 153, 0.8);--tr_wc1-colorBackgroundToggleDisabled:rgb(174, 174, 174);--tr_wc1-colorGray13:rgb(8, 7, 7);--tr_wc1-colorGray10:rgb(81, 79, 77);--tr_wc1-paletteNeutral40:rgb(92, 92, 92);--tr_wc1-colorBorderInverse:#061c3f;--tr_wc1-carouselIndicatorColorBackgroundActive:rgb(1, 118, 211);--tr_wc1-colorBackgroundBackdrop:rgba(255, 255, 255, 0.75);--tr_wc1-colorGray12:rgb(43, 40, 38);--tr_wc1-colorGray11:rgb(62, 62, 60);--tr_wc1-colorTextContextBarActionTrigger:rgba(255, 255, 255, 0.4);--tr_wc1-paletteHotOrange20:rgb(74, 36, 19);--tr_wc1-colorBackgroundNotification:rgb(255, 255, 255);--tr_wc1-colorBackgroundPathStepActionCurrent:rgb(1, 68, 134);--tr_wc1-badgeColorBackgroundInverse:rgb(116, 116, 116);--tr_wc1-colorBorderSeparatorInverse:rgb(3, 45, 96);--tr_wc1-paletteRed50:rgb(234, 0, 30);--tr_wc1-colorBackgroundSpinnerDot:rgb(174, 174, 174);--tr_wc1-colorBackgroundButtonBrandActive:rgb(3, 45, 96);--tr_wc1-paletteHotOrange15:rgb(66, 22, 4);--tr_wc1-sliderHandleColorBackgroundFocus:rgb(1, 118, 211);--tr_wc1-spinnerSizeMedium:2rem;--tr_wc1-brandPrimary:rgb(27, 150, 255);--tr_wc1-paletteHotOrange50:rgb(216, 58, 0);--tr_wc1-colorTextLinkPrimaryFocus:rgb(1, 118, 211);--tr_wc1-colorTextInputDisabled:rgb(116, 116, 116);--tr_wc1-brandLogoImage:url(/_slds/images/logo-noname.svg?cache=380754d9);--tr_wc1-brandLight:rgb(244, 246, 254);--tr_wc1-paletteRed20:rgb(100, 1, 3);--tr_wc1-fillHeaderButton:rgb(174, 174, 174);--tr_wc1-varLineHeightText:1.5;--tr_wc1-colorBackgroundPathCurrent:rgb(255, 255, 255);--tr_wc1-colorBackgroundOffline:rgb(68, 68, 68);--tr_wc1-colorBorderTabSelected:rgb(1, 118, 211);--tr_wc1-colorTextWarning:#ffb75d;--tr_wc1-salesforceSansRegularWoff:url(/_slds/fonts/v2.3.0/SalesforceSans-Regular.woff);--tr_wc1-paletteHotOrange40:rgb(170, 48, 1);--tr_wc1-cardSpacingLarge:1.5rem;--tr_wc1-paletteRed30:rgb(142, 3, 15);--tr_wc1-fontSizeMediumA:1.125rem;--tr_wc1-borderRadiusMedium:0.25rem;--tr_wc1-colorPickerSliderThumbBorderColor:rgb(68, 68, 68);--tr_wc1-shadowSoftPrimary:none;--tr_wc1-zIndexDropdown:7000;--tr_wc1-paletteHotOrange70:rgb(255, 144, 110);--tr_wc1-verticalNavigationColorBackgroundShadeRowHover:rgb(243, 243, 243);--tr_wc1-squareIconMediumBoundary:2rem;--tr_wc1-colorBorderInpuDisabled:#a8b7c7;--tr_wc1-colorBackgroundButtonDefaultFocus:rgb(243, 243, 243);--tr_wc1-heightTappable:2.75rem;--tr_wc1-colorBackgroundToastError:rgb(234, 0, 30);--tr_wc1-brandBandDefaultImage:;--tr_wc1-durationQuickly:0.1s;--tr_wc1-colorBackgroundSelection:rgb(216, 230, 254);--tr_wc1-paletteHotOrange60:rgb(255, 93, 45);--tr_wc1-colorBackgroundActionbarIconUtility:rgb(116, 116, 116);--tr_wc1-colorBackgroundNotificationBadgeFocus:rgb(1, 68, 134);--tr_wc1-paletteHotOrange65:rgb(255, 120, 79);--tr_wc1-cardFooterTextAlign:right;--tr_wc1-colorBorderBrandDark:rgb(1, 68, 134);--tr_wc1-brandBackgroundDark:rgb(232, 232, 232);--tr_wc1-avatarGroupColorBackgroundLightest:rgb(255, 255, 255);--tr_wc1-colorTextContextBar:rgb(68, 68, 68);--tr_wc1-inputStaticFontWeight:400;--tr_wc1-paletteRed10:rgb(48, 12, 1);--tr_wc1-colorTextLinkDisabled:rgb(3, 45, 96);--tr_wc1-colorTextPathCurrent:rgb(1, 68, 134);--tr_wc1-paletteRed15:rgb(74, 12, 4);--tr_wc1-zIndexOverlay:8000;--tr_wc1-buttonColorBorderPrimary:rgb(243, 243, 243);--tr_wc1-paletteHotOrange90:rgb(255, 222, 213);--tr_wc1-shadowImage:0 1px 1px rgba(0, 0, 0, 0.16);--tr_wc1-paletteHotOrange95:rgb(254, 241, 237);--tr_wc1-cardHeaderPadding:0.75rem 1rem 0;--tr_wc1-colorBorderSeparatorAlt2:rgb(201, 201, 201);--tr_wc1-fillBrandActive:rgb(3, 45, 96);--tr_wc1-fontSizeTextMedium:1rem;--tr_wc1-spacingXSmall:0.5rem;--tr_wc1-chatMessageColorBackgroundOutboundAgent:rgb(116, 116, 116);--tr_wc1-colorBackgroundButtonIconHover:rgb(243, 243, 243);--tr_wc1-sliderHandleColorBackgroundActive:rgb(1, 118, 211);--tr_wc1-colorBorderSuccess:rgb(145, 219, 139);--tr_wc1-colorTextIconInverseHover:rgb(255, 255, 255);--tr_wc1-componentSpacingPadding:1rem;--tr_wc1-colorBorderDestructiveActive:rgb(142, 3, 15);--tr_wc1-colorBackgroundButtonInverseDisabled:rgba(0, 0, 0, 0);--tr_wc1-colorTextTabLabelFocus:rgb(1, 68, 134);--tr_wc1-paletteHotOrange80:rgb(254, 185, 165);--tr_wc1-colorBackgroundNotificationBadge:rgb(234, 0, 30);--tr_wc1-zIndexReminder:8500;--tr_wc1-colorBackgroundImageOverlay:rgba(0, 0, 0, 0.4);--tr_wc1-colorBackgroundReminderHover:rgb(255, 255, 255);--tr_wc1-colorTextPathCurrentHover:rgb(3, 45, 96);--tr_wc1-colorBackgroundCustomer:rgb(254, 147, 57);--tr_wc1-colorBackgroundButtonDefault:rgb(255, 255, 255);--tr_wc1-colorBackgroundInverseLight:rgb(3, 45, 96);--tr_wc1-salesforceSansBoldWoff:url(/_slds/fonts/v2.3.0/SalesforceSans-Bold.woff);--tr_wc1-progressColorBorderActive:rgb(27, 150, 255);--tr_wc1-fontSizeLarge:1.25rem;--tr_wc1-brandHeaderContrastWeakActive:rgb(129, 129, 129);--tr_wc1-brandHeaderContrastWarmActive:rgb(186, 5, 23);--tr_wc1-squareToggleSlider:1.25rem;--tr_wc1-progressBarColorBackgroundFillSuccess:rgb(46, 132, 74);--tr_wc1-colorBackgroundButtonBrand:rgb(1, 118, 211);--tr_wc1-colorBackgroundWarningDark:rgb(254, 147, 57);--tr_wc1-colorTextIconUtility:rgb(174, 174, 174);--tr_wc1-colorBackgroundScrollbar:rgb(243, 243, 243);--tr_wc1-chatMessageColorBackgroundStatus:rgb(255, 255, 255);--tr_wc1-colorBackgroundTempModalTintAlt:rgba(255, 255, 255, 0.75);--tr_wc1-pageHeaderBorderRadius:0;--tr_wc1-palettePink95:rgb(254, 240, 243);--tr_wc1-welcomeMatColorIconComplete:rgb(201, 201, 201);--tr_wc1-palettePink90:rgb(253, 221, 227);--tr_wc1-paletteViolet50:rgb(186, 1, 255);--tr_wc1-paletteTeal30:rgb(2, 77, 76);--tr_wc1-colorTextIconInverseDisabled:rgba(255, 255, 255, 0.15);--tr_wc1-bannerGroupDefaultImage:;--tr_wc1-colorBorderBrand:rgb(27, 150, 255);--tr_wc1-colorBackgroundInfo:#54698d;--tr_wc1-heightToggle:1.5rem;--tr_wc1-badgeColorBackgroundLightest:rgb(255, 255, 255);--tr_wc1-brandBandColorBackgroundSecondary:rgba(0, 0, 0, 0);--tr_wc1-shadowSoftPrimaryActive:none;--tr_wc1-colorTextIconDefaultHint:rgb(174, 174, 174);--tr_wc1-colorBackgroundChromeMobile:rgb(1, 118, 211);--tr_wc1-colorPickerSwatchSize:1.25rem;--tr_wc1-colorBackgroundPathIncomplete:rgb(243, 243, 243);--tr_wc1-paletteTeal40:rgb(5, 103, 100);--tr_wc1-colorTextToggleDisabled:rgb(201, 201, 201);--tr_wc1-paletteViolet40:rgb(150, 2, 199);--tr_wc1-colorTextLinkInverseHover:rgba(255, 255, 255, 0.75);--tr_wc1-palettePink80:rgb(253, 182, 197);--tr_wc1-zIndexModal:9000;--tr_wc1-pageHeaderIconSize:2.25rem;--tr_wc1-colorTextDestructiveHover:rgb(186, 5, 23);--tr_wc1-colorBorderCanvasElementSelection:rgb(26, 185, 255);--tr_wc1-colorBackgroundSuccess:rgb(69, 198, 90);--tr_wc1-carouselIndicatorColorBackground:rgb(255, 255, 255);--tr_wc1-sliderTrackHeight:4px;--tr_wc1-squareIconSmallContent:0.75rem;--tr_wc1-colorBackgroundInputDisabled:rgb(243, 243, 243);--tr_wc1-paletteTeal50:rgb(11, 130, 124);--tr_wc1-palettePink70:rgb(254, 138, 167);--tr_wc1-paletteViolet30:rgb(115, 3, 148);--tr_wc1-mqSmall:only screen and (max-width: 47.9375em);--tr_wc1-brandBandImageHeightLarge:18.75rem;--tr_wc1-carouselIndicatorWidth:1rem;--tr_wc1-colorTextLinkActive:rgb(3, 45, 96);--tr_wc1-squareIconXxSmallContent:.875rem;--tr_wc1-fontSizeXSmall:0.625rem;--tr_wc1-palettePink65:rgb(254, 114, 152);--tr_wc1-sliderColorBackgroundDisabled:rgb(243, 243, 243);--tr_wc1-colorContrastSecondary:rgb(255, 255, 255);--tr_wc1-welcomeMatColorBackgroundProgressBar:rgb(255, 255, 255);--tr_wc1-globalActionIconSize:1.5rem;--tr_wc1-paletteViolet20:rgb(72, 26, 84);--tr_wc1-fontSizeHeadingSmall:0.875rem;--tr_wc1-colorPickerRangeIndicatorSize:0.75rem;--tr_wc1-paletteOrange15:rgb(55, 30, 3);--tr_wc1-sliderHandleSize:1rem;--tr_wc1-tableBorderRadius:0;--tr_wc1-paletteTeal60:rgb(6, 165, 154);--tr_wc1-userDefaultAvatarSmall:url(/_slds/images/profile_avatar_96.png?cache=3c01f25f);--tr_wc1-buttonColorBackgroundPrimary:rgb(255, 255, 255);--tr_wc1-colorPickerInputCustomHexWidth:4.2rem;--tr_wc1-paletteOrange10:rgb(32, 22, 0);--tr_wc1-palettePink60:rgb(255, 83, 138);--tr_wc1-paletteTeal65:rgb(3, 180, 167);--tr_wc1-colorBackgroundRowSelected:rgb(243, 243, 243);--tr_wc1-colorBackgroundContextBarBrandAccent:rgb(13, 157, 218);--tr_wc1-fontFamilyMonospace:Consolas, Menlo, Monaco, Courier, monospace;--tr_wc1-cardFooterColorBorder:rgba(0, 0, 0, 0);--tr_wc1-palettePurple80:rgb(215, 191, 242);--tr_wc1-varSpacingHorizontalLarge:1.5rem;--tr_wc1-colorTextRequired:rgb(234, 0, 30);--tr_wc1-elevationShadow16:0 16px 16px 0 rgba(0, 0, 0, 0.16);--tr_wc1-paletteViolet10:rgb(46, 0, 57);--tr_wc1-shadowHardPrimary:none;--tr_wc1-paletteOrange20:rgb(62, 43, 2);--tr_wc1-paletteViolet15:rgb(61, 1, 87);--tr_wc1-radioButtonGroupLineHeightTouch:2.69rem;--tr_wc1-colorBackgroundBrandPrimary:rgb(1, 118, 211);--tr_wc1-paletteTeal70:rgb(1, 195, 179);--tr_wc1-colorBackgroundUtilityBarActive:rgb(27, 150, 255);--tr_wc1-zIndexSticky:100;--tr_wc1-colorBackgroundContextBarShadow:linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0) 100%);--tr_wc1-paletteTeal80:rgb(4, 225, 203);--tr_wc1-palettePurple90:rgb(236, 225, 249);--tr_wc1-squareIconUtilityLarge:1.5rem;--tr_wc1-fontSize10:2rem;--tr_wc1-groupDefaultAvatarMedium:url(/_slds/images/group_avatar_160.png?cache=b8fe8e83);--tr_wc1-elevationShadow32:0 32px 32px 0 rgba(0, 0, 0, 0.16);--tr_wc1-paletteOrange30:rgb(95, 62, 2);--tr_wc1-colorBorderButtonInverseDisabled:rgba(255, 255, 255, 0.15);--tr_wc1-fontSize11:2.625rem;--tr_wc1-einsteinHeaderTextShadow:#cfe9fe;--tr_wc1-palettePurple95:rgb(246, 242, 251);--tr_wc1-squareTappableXxSmall:1.25rem;--tr_wc1-colorBackgroundDestructiveHover:rgb(142, 3, 15);--tr_wc1-fontSize9:1.75rem;--tr_wc1-colorBackgroundLight:rgb(255, 255, 255);--tr_wc1-fontSize8:1.5rem;--tr_wc1-paletteTeal90:rgb(172, 243, 228);--tr_wc1-shadowActive:0 0 2px #0176d3;--tr_wc1-fontSize1:0.625rem;--tr_wc1-paletteNeutral100:rgb(255, 255, 255);--tr_wc1-colorTextLink:rgb(1, 118, 211);--tr_wc1-pageHeaderTitleFontSize:1.125rem;--tr_wc1-fontSize3:0.8125rem;--tr_wc1-fontSize2:0.75rem;--tr_wc1-colorTextLinkInverseDisabled:rgba(255, 255, 255, 0.15);--tr_wc1-fontSize5:1rem;--tr_wc1-fontSize4:0.875rem;--tr_wc1-fontSize7:1.25rem;--tr_wc1-fontSize6:1.125rem;--tr_wc1-spacingNone:0;--tr_wc1-paletteOrange40:rgb(130, 81, 1);--tr_wc1-inputReadonlyFontWeight:400;--tr_wc1-palettePurple60:rgb(173, 123, 238);--tr_wc1-paletteTeal95:rgb(222, 249, 243);--tr_wc1-colorStrokeHeaderButton:rgb(174, 174, 174);--tr_wc1-typingIconDotColorBackgroundGray:rgb(201, 201, 201);--tr_wc1-palettePurple65:rgb(183, 141, 239);--tr_wc1-pageHeaderTitleFontWeight:400;--tr_wc1-colorBackgroundButtonIconFocus:rgb(243, 243, 243);--tr_wc1-groupDefaultAvatarSmall:url(/_slds/images/group_avatar_96.png?cache=d0659d12);--tr_wc1-colorBackgroundModalBrand:rgb(1, 68, 134);--tr_wc1-colorTextInverseActive:rgb(26, 185, 255);--tr_wc1-colorBackgroundHighlightSearch:rgb(255, 240, 63);--tr_wc1-paletteOrange50:rgb(169, 100, 4);--tr_wc1-colorBackgroundSuccessDark:rgb(46, 132, 74);--tr_wc1-shadowOverlay:0 -2px 4px rgba(0, 0, 0, 0.07);--tr_wc1-sizeXSmall:12rem;--tr_wc1-colorBackgroundDestructive:#c23934;--tr_wc1-typingIconDotSize:.5rem;--tr_wc1-palettePurple70:rgb(194, 158, 241);--tr_wc1-colorBorderInfo:rgb(116, 116, 116);--tr_wc1-colorTextTabLabel:rgb(3, 45, 96);--tr_wc1-palettePink15:rgb(75, 6, 32);--tr_wc1-popoverWalkthroughColorBackgroundAlt:rgb(1, 118, 211);--tr_wc1-durationImmediately:0.05s;--tr_wc1-palettePink10:rgb(55, 1, 20);--tr_wc1-elevationInverseShadow16:0 -16px 16px 0 rgba(0, 0, 0, 0.16);--tr_wc1-salesforceSansLightWoff2:url(/_slds/fonts/v2.3.0/SalesforceSans-Light.woff2);--tr_wc1-splitViewWidth:25rem;--tr_wc1-colorBorderIconInverseHint:rgba(255, 255, 255, 0.5);--tr_wc1-brandDisabled:rgb(201, 199, 197);--tr_wc1-paletteOrange60:rgb(221, 122, 1);--tr_wc1-palettePurple40:rgb(117, 38, 227);--tr_wc1-paletteOrange65:rgb(243, 131, 3);--tr_wc1-progressColorBackground:rgb(255, 255, 255);--tr_wc1-colorBorderContextBarThemeDefaultActive:rgb(243, 243, 243);--tr_wc1-avatarGroupColorBackgroundInverse:rgb(116, 116, 116);--tr_wc1-colorBackgroundAlt2:rgb(243, 243, 243);--tr_wc1-cardFontWeight:400;--tr_wc1-colorPickerSwatchShadow:inset 0 0 1px rgba(0,0,0,0.4);--tr_wc1-paletteOrange70:rgb(254, 147, 57);--tr_wc1-colorTextIconBrand:rgb(1, 118, 211);--tr_wc1-colorTextButtonDefault:rgb(1, 118, 211);--tr_wc1-palettePurple50:rgb(144, 80, 233);--tr_wc1-pathButtonWidthFixed:13rem;--tr_wc1-sizeLarge:25rem;--tr_wc1-userDefaultAvatarMedium:url(/_slds/images/profile_avatar_160.png?cache=bfba2c9a);--tr_wc1-colorBorderDestructive:rgb(234, 0, 30);--tr_wc1-colorTextWeak:rgb(116, 116, 116);--tr_wc1-fontSizeHeadingMedium:1.125rem;--tr_wc1-mqSingleColumnRecordLayout:(max-width: 599px);--tr_wc1-colorBackgroundInputSearch:rgba(0, 0, 0, 0.16);--tr_wc1-welcomeMatBackgroundColorInfo:rgb(207, 233, 254);--tr_wc1-colorBorderBrandPrimary:rgb(27, 150, 255);--tr_wc1-colorBackgroundInverse:rgb(0, 22, 57);--tr_wc1-maxWidthActionOverflowMenu:512px;--tr_wc1-paletteNeutral10:rgb(24, 24, 24);--tr_wc1-carouselColorBackground:rgb(255, 255, 255);--tr_wc1-colorTextLabel:rgb(116, 116, 116);--tr_wc1-colorBackgroundButtonSuccessActive:rgb(46, 132, 74);--tr_wc1-squareIconLarge:3.125rem;--tr_wc1-spinnerSizeXSmall:1rem;--tr_wc1-paletteOrange80:rgb(255, 186, 144);--tr_wc1-cardSpacingMargin:1rem;--tr_wc1-colorTextBrowserActive:rgba(0, 0, 0, 0.4);--tr_wc1-colorBackgroundButtonBrandHover:rgb(1, 68, 134);--tr_wc1-chatMessageColorBackgroundOutbound:rgb(1, 68, 134);--tr_wc1-colorTextIconDefaultActive:rgb(3, 45, 96);--tr_wc1-palettePurple20:rgb(64, 16, 117);--tr_wc1-colorTextIconDefaultHover:rgb(1, 118, 211);--tr_wc1-colorTextLinkPrimary:rgb(1, 118, 211);--tr_wc1-fontSizeTextXSmall:0.75rem;--tr_wc1-colorBackgroundToast:rgb(116, 116, 116);--tr_wc1-fontSizeXxLarge:1.75rem;--tr_wc1-heightSalesPath:2rem;--tr_wc1-colorTextIconDefaultHintBorderless:rgb(243, 243, 243);--tr_wc1-paletteOrange95:rgb(255, 241, 234);--tr_wc1-colorForegroundPrimary:rgb(255, 255, 255);--tr_wc1-paletteOrange90:rgb(254, 223, 208);--tr_wc1-colorBackgroundRowNew:rgb(205, 239, 196);--tr_wc1-fontSizeTextLarge:1.125rem;--tr_wc1-paletteGreen15:rgb(12, 41, 18);--tr_wc1-colorBackgroundShade:rgb(243, 243, 243);--tr_wc1-paletteGreen10:rgb(7, 27, 18);--tr_wc1-palettePurple30:rgb(90, 27, 169);--tr_wc1-varSpacingXxxSmall:0.125rem;--tr_wc1-brandLightActive:rgb(227, 229, 237);--tr_wc1-welcomeMatTextColorInfo:rgb(3, 45, 96);--tr_wc1-colorBackgroundIconWaffle:rgb(116, 116, 116);--tr_wc1-colorBackgroundContextBarItemHover:rgb(255, 255, 255);--tr_wc1-fontSizeXLargeA:1.57rem;--tr_wc1-colorBackgroundPathCompleteHover:rgba(4,132,75,.95);--tr_wc1-palettePink50:rgb(227, 6, 106);--tr_wc1-paletteViolet90:rgb(242, 222, 254);--tr_wc1-paletteGreen20:rgb(28, 51, 38);--tr_wc1-paletteViolet95:rgb(249, 240, 255);--tr_wc1-colorBorderContextBarThemeDefaultHover:rgb(50, 29, 113);--tr_wc1-squareIconMedium:2.375rem;--tr_wc1-textTransform:none;--tr_wc1-colorBackgroundBrandPrimaryHover:rgb(1, 68, 134);--tr_wc1-colorTextSuccess:#028048;--tr_wc1-carouselIndicatorColorBackgroundFocus:rgb(1, 68, 134);--tr_wc1-colorBackgroundChromeDesktop:rgb(255, 255, 255);--tr_wc1-borderStrokeWidthThick:2px;--tr_wc1-colorBackgroundReminder:rgb(243, 243, 243);--tr_wc1-palettePurple15:rgb(48, 11, 96);--tr_wc1-colorTextToast:rgb(243, 243, 243);--tr_wc1-paletteViolet80:rgb(229, 185, 254);--tr_wc1-colorBackgroundAlt:rgb(255, 255, 255);--tr_wc1-palettePink40:rgb(182, 5, 84);--tr_wc1-paletteGreen30:rgb(25, 78, 49);--tr_wc1-palettePurple10:rgb(36, 6, 67);--tr_wc1-elevationInverseShadow32:0 -32px 32px 0 rgba(0, 0, 0, 0.16);--tr_wc1-colorBorderCustomer:rgb(254, 147, 57);--tr_wc1-tableColorBackgroundStripes:rgb(243, 243, 243);--tr_wc1-varSpacingVerticalSmall:0.75rem;--tr_wc1-palettePink30:rgb(138, 3, 62);--tr_wc1-paletteViolet70:rgb(216, 146, 254);--tr_wc1-colorBorderContextBarInverseItem:rgba(255, 255, 255, 0.2);--tr_wc1-utilityBarColorBackgroundNotificationBadge:rgb(254, 92, 76);--tr_wc1-colorTextTabLabelDisabled:rgb(243, 243, 243);--tr_wc1-heightInput:1.875rem;--tr_wc1-squareTappable:2.75rem;--tr_wc1-fontSizeSmall:0.75rem;--tr_wc1-paletteGreen40:rgb(57, 101, 71);--tr_wc1-tableColorBackgroundHeaderFocus:rgb(255, 255, 255);--tr_wc1-salesforceSansRegularWoff2:url(/_slds/fonts/v2.3.0/SalesforceSans-Regular.woff2);--tr_wc1-varSpacingHorizontalXxLarge:3rem;--tr_wc1-paletteViolet65:rgb(209, 125, 254);--tr_wc1-progressBarColorBackgroundFill:rgb(26, 185, 255);--tr_wc1-colorBorderSeparator:rgb(243, 243, 243);--tr_wc1-paletteGreen50:rgb(46, 132, 74);--tr_wc1-brandHeaderIconDisabled:rgba(145, 145, 145, 0.25);--tr_wc1-palettePink20:rgb(97, 2, 42);--tr_wc1-splitViewColorBackground:rgb(243, 243, 243);--tr_wc1-colorBackgroundSecondary:rgb(243, 243, 243);-

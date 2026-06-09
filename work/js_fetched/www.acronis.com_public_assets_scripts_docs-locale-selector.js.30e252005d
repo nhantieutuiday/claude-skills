@@ -1,0 +1,171 @@
+(async function localeSelectorInit() {
+    // Don't run in iframes
+    if (window !== window.top) return;
+
+    // Check the button placement
+    const buttonRoot = document.querySelector('#contentBody .buttons.toolbar-buttons .button-group-container-right');
+    if (!buttonRoot) {
+        console.log('[LOC] no buttonRoot found, exiting');
+        return;
+    }
+
+    // Get locales list
+    let locales = [];
+    try {
+        const basePath = window.location.pathname.replace(/[^/]+[.]html?$/, '');
+        const xhr = await fetch(basePath + 'Data/Locales.json');
+        locales = await xhr.json();
+
+        if (!locales.length) {
+            throw new Error('Locales list is empty');
+        }
+    } catch (e) {
+        console.log('[LOC] No locales found, exiting', e);
+        return;
+    }
+
+    // Inject styles
+    const styles = document.createElement('style');
+    styles.innerText = `
+        #ils_wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        #ils_button {
+            margin-top: -3px;
+            fill: #4875b3;
+            transition: fill 0.12s linear;
+        }
+
+        #ils_button:hover {
+            fill: #6699ff;
+        }
+
+        #ils_button svg {
+            display: block;
+            width: 20px;
+        }
+
+        #ils_dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            max-width: 300px;
+            z-index: 1;
+            right: 0;
+            top: 32px;
+            border: 1px solid rgba(38, 104, 197, 1);
+            border-radius: 4px;
+        }
+
+        #ils_dropdown.ils_visible {
+            display: block;
+        }
+
+        .ils_option {
+            text-decoration: none;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px;
+            padding: 0 16px;
+            line-height: 2.86;
+            cursor: pointer;
+        }
+
+        .ils_option.ils_active {
+            font-weight: bold;
+            cursor: not-allowed;
+        }
+
+        .ils_option:hover {
+            background-color: rgba(38, 104, 197, .1);
+        }
+    `;
+    document.body.appendChild(styles);
+
+    // Inject a button wrapper
+    const wrapper = document.createElement('div');
+    wrapper.id = 'ils_wrapper';
+    buttonRoot.appendChild(wrapper);
+
+    // Inject the button
+    const SVG_GLOBE = `
+        <svg viewBox="0 0 66.5 62.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60.8,27.2c-0.2-2-0.5-4-1.1-5.9C56.2,9,45.2,0.5,32.5,0.1c-0.7,0-1.3,0-2,0C17.8,0.5,6.8,9,3.3,21.2       c-0.6,1.9-0.9,3.9-1.1,5.9c0,0.7-0.1,1.5-0.1,2.2c0,15.8,12.6,28.8,28.4,29.3c0.7,0,1.3,0,2,0c15.8-0.5,28.4-13.5,28.4-29.3       C60.9,28.6,60.8,27.9,60.8,27.2z M48.9,16c2.1,2.6,3.5,5.7,4.2,9c0.1,0.4,0.1,0.8,0.2,1.2c-2.1,1.4-4.6,2.1-7.1,2.2       c0-1.8-0.1-3.7-0.3-5.5c-0.2-2.6-0.6-5.1-1.1-7.6c-0.3-1.5-0.7-3-1.2-4.4C45.6,12.3,47.4,14,48.9,16z M37,14.8       c0.7,2.4,1.2,4.9,1.5,7.4c0.3,2.3,0.4,4.6,0.4,6.9c-2.3,0.1-4.8,0.2-7.3,0.2s-5-0.1-7.3-0.2c0-2.3,0.1-4.6,0.4-6.9       c0.3-2.5,0.7-5,1.5-7.4c1.3-4.6,3.3-7.5,5.5-7.5S35.7,10.2,37,14.8z M19.5,10.9c-0.5,1.4-0.9,2.9-1.2,4.4       c-0.6,2.5-0.9,5-1.1,7.6c-0.2,1.8-0.3,3.7-0.3,5.5c-2.5-0.1-5-0.8-7.1-2.2c0-0.4,0.1-0.8,0.2-1.2c0.7-3.3,2.1-6.4,4.2-9       C15.6,14,17.4,12.3,19.5,10.9L19.5,10.9z M10.1,34.5c2.3,0.7,4.6,1.2,7,1.5c0.3,4,1.1,8,2.4,11.9C14.8,44.8,11.4,40,10.1,34.5z        M24.6,36.6c2.1,0.1,4.4,0.1,6.9,0.1s4.8,0,6.9-0.1c-1,8.6-3.7,14.8-6.9,14.8S25.6,45.2,24.6,36.6z M43.5,47.9       C44.8,44,45.6,40,45.9,36c2.4-0.3,4.7-0.8,7-1.5C51.6,40,48.3,44.8,43.5,47.9L43.5,47.9z"></path>
+        </svg>
+    `;
+
+    const button = document.createElement('button');
+    button.id = 'ils_button';
+    button.innerHTML = SVG_GLOBE;
+    button.title = 'Select language';
+    button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle('ils_visible');
+    });
+
+    wrapper.appendChild(button);
+
+    // Inject a dropdown
+    const LOCALE_TO_LANG = {
+        'en-us': 'English (US)',
+        'en-gb': 'English (United Kingdom)',
+        'en-sg': 'English (Singapore)',
+        'en-eu': 'English (Europe)',
+        'fr-fr': 'Français',
+        'de-de': 'Deutsch',
+        'it-it': 'Italiano',
+        'es-es': 'Español (Spain)',
+        'es-mx': 'Español (Mexico)',
+        'zh-cn': '简体中文',
+        'zh-tw': '繁體中文',
+        'ja-jp': '日本語',
+        'ko-kr': '한국어',
+        'id-id': 'Bahasa Indonesia',
+        'vi-vn': 'Tiếng Việt',
+        'hi-in': 'हिन्दी',
+        // 'bg-bg': 'Български',
+        // 'cs-cz': 'Čeština',
+        // 'pt-br': 'Português (Brazil)',
+        'pl-pl': 'Polski',
+        'ro-ro': 'Română',
+        // 'tr-tr': 'Türkçe',
+        // 'hu-hu': 'Magyar (Hungary)',
+        'ru-ru': 'Русский',
+        'nl-nl': 'Dutch',
+    };
+
+    const currentLocale = window.location.pathname.split('/').filter(Boolean)[0];
+
+    const dropdown = document.createElement('div');
+    dropdown.id = 'ils_dropdown';
+    wrapper.appendChild(dropdown);
+
+    for (const locale of locales) {
+        if (!LOCALE_TO_LANG[locale]) continue;
+
+        const option = document.createElement('div');
+        option.classList.add('ils_option');
+        locale === currentLocale && option.classList.add('ils_active');
+        option.innerText = LOCALE_TO_LANG[locale];
+        option.addEventListener('click', (e) => {
+            e.stopPropagation();
+            dropdown.classList.remove('ils_visible');
+
+            if (locale === currentLocale) return;
+            window.location.pathname = window.location.pathname.replace(currentLocale, locale);
+        });
+        dropdown.appendChild(option);
+    }
+
+    // Adding event listeners to autohide the dropdown
+    const autohide = () => dropdown.classList.remove('ils_visible');
+
+    window.addEventListener('click', autohide);
+    window.addEventListener('blur', autohide);
+    window.addEventListener('keydown', (e) => (e.key === 'Escape') && autohide());
+})();

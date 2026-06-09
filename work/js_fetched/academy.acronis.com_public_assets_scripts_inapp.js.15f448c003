@@ -1,0 +1,7 @@
+(function () {
+    const searchParams = new URL(window.location.href).searchParams;
+    if (!searchParams.get('ep')) return;
+    if (!searchParams.get('mp')) return;
+    if (!window.location.href.includes('products/true-image/purchasing')) return;
+    document.querySelector('html').classList.add('inapp');
+}());

@@ -1,0 +1,128 @@
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PFG6ZF');
+(function(w, callback){
+w.acro_analytics = {
+'ua': 'UA-149943-47',
+'ga_domain': 'acronis.com.sg',
+'page_category': 'documentation',
+'hostname': location.hostname,
+'referrer': document.referrer.replace(/^http:\/\//i, '') || 'false',
+getHash: function() {
+return location.hash;
+},
+'hisoryhash': location.hash,
+'search': location.search.replace(/^\?/, '').split('&').join('|') || 'false',
+'pathname': location.pathname.replace('index.html', ''),
+checkHashChange: function() {
+if (acro_analytics.getHash() == acro_analytics['hisoryhash']) return;
+acro_analytics['hisoryhash'] = acro_analytics.getHash();
+acro_analytics.sendPageView();
+},
+getPageView: function() {
+return [
+acro_analytics['pathname'],
+acro_analytics.getHash()
+].join('');
+}, 
+getPagePath: function() {
+return [
+acro_analytics['hostname'],
+acro_analytics['pathname'], 
+acro_analytics.getHash()
+].join('');
+},
+'options': {
+'allowLinker': true
+},
+'user': {
+getUID: function() {
+var cookie = ' ' + document.cookie,
+search = ' AcronisUID.en_sg=',
+str = null,
+offset = 0,
+end = 0;
+if (cookie.length > 0) {
+offset = cookie.indexOf(search);
+if (offset != -1) {
+offset += search.length;
+end = cookie.indexOf(";", offset)
+if (end == -1) end = cookie.length;
+str = unescape(cookie.substring(offset, end));
+}
+}
+return (str);
+},
+getCIDname: function() {
+return 'x-utm_cID'; 
+},
+getCIDval: function() {
+var cid = '';
+ga(function(tracker) {
+cid = tracker.get('clientId');
+}); 
+return cid; 
+}, 
+getLinkerName: function() {
+var linker_name = '';
+ga(function(tracker) {
+linker_name = tracker.get('linkerParam').split('=')[0];
+}); 
+return linker_name;
+},
+getLinkerVal: function() {
+var linker_val = '';
+ga(function(tracker) {
+linker_val = tracker.get('linkerParam').split('=')[1];
+}); 
+return linker_val;
+}
+},
+pushSet: function(extend, callback) {
+var extend = extend || {};
+ga(function(tracker) {
+var tracker = tracker;
+tracker.set(extend);
+});
+if (callback) callback();
+},
+sendPageView: function(ref_w_hash) {
+dataLayer.push({
+'event': 'Acronis',
+'eventCategory': 'click',
+'eventAction': location.pathname,
+'eventLabel': location.hash,
+});
+},
+sendEvent: function(category, action, label, value) {
+if (!category || !action) return;
+}
+}
+if (callback) callback();
+})(window, function() {
+setInterval(acro_analytics.checkHashChange, 100);
+});
+document.addEventListener("DOMContentLoaded", function(){
+(function(){
+var url = '';
+var locale = location.href.replace(/.*?\/(\w\w-\w\w)\/.*/, '$1');
+if (/support\/documentation/.test(location.pathname)) {
+if (/AcronisRansomwareProtection/.test(location.pathname)) {
+url = '/js/crosssys/ribbons/contents/support-documentation-ransomware.html';
+}
+if (!url) {
+return;
+}
+var xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+xmlhttp.onreadystatechange = function() {
+if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+setTimeout(function(){ document.body.innerHTML += xmlhttp.responseText; }, 1000);
+}
+}
+xmlhttp.open("GET", '/' + locale + url, true);
+xmlhttp.send();
+}
+})();
+});

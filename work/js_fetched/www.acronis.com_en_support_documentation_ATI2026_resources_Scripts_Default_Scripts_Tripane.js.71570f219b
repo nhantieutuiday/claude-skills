@@ -1,0 +1,32 @@
+$(document).ready(function() {
+
+    if (window.location.href.search('Highlight') !== -1) {
+        $('.remove-highlight-button').show();
+    }
+
+    /* On click event for PDF toolbar button */
+    $('.pdf-button').click(function() {
+        window.open('https://acronis.com'); // Replace URL with URL to the PDF guide
+        return false;
+    });
+
+    /* On click event for Send Feedback button */
+    $('.send-feedback-button').click(function() {
+        var title = document.title;
+        var bodyText = "Please write your feedback about this Help under the topic URL.\nIf you need support with a product feature, please contact our Support team at https://support.acronis.com/.\nURL: " + document.location.href;
+        document.location.href = "mailto:doc_feedback@acronis.com?Subject=" + title + "&Body=" + encodeURIComponent(bodyText);
+    });
+
+    $('.remove-highlight-button').click(function() {
+        $(this).hide();
+    });
+
+});
+
+$(window).on('hashchange', function() {
+    if (window.location.href.search('Highlight') > -1) {
+        $('.remove-highlight-button').show();
+    } else {
+        $('.remove-highlight-button').hide();
+    }
+});

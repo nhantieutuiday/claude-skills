@@ -1,0 +1,42 @@
+﻿// Localizable UI strings
+// Use this section to translate the words/sentences used in the Web Help Template application User Interface such as titles, labels, tooltips and others.
+// Note: Do not change the English words/sentences at the left side field, place your translated words/sentences into the right side field after the colon ':'
+// e.g. to translate the word 'Contents' to German set the right side to 'Inhalt' it shoud look like "Contents" : "Inhalt"
+
+// French
+var resources = {
+        "Contents"                          : "Contenu ",
+        "Index"                  		    : "Index" ,
+        "Collapse"                          : "Tout réduire",
+        "Expand All"                        : "Tout étendre",
+        "Home"                              : "Accueil",
+        "Previous"                          : "Précédent",
+        "Next"                              : "Suivant",
+        "Edit in Author-it"                 : "Modifier dans Author-it",
+        "Edit in Author-it Live"            : "Modifier dans Author-it Live",
+        "Email this page"                   : "Envoyer cette page par courrier électronique",
+        "Send feedback"                     : "Envoyer un feedback au sujet de cette page",
+        "Print this page"                   : "Imprimer cette page",
+        "Click to Expand/Collapse"          : "Cliquer pour étendre/réduire",
+        "Click to Expand (Auto hide off)"   : "Cliquer pour étendre (masquage automatique désactivé)",
+        "Loading"                           : "Chargement en cours",
+        "Match partial words"               : "Correspondance partielle des mots",
+        "Search"                            : "Rechercher",
+        "Search loading"                    : "Chargement de la recherche",
+        "Searching"                         : "Recherche en cours",
+        "No search performed"               : "Aucune recherche effectuée",
+        "result(s) found"                   : "résultat(s) trouvé(s)",
+        "seconds"                           : "secondes",
+        "No results found"                  : "Aucun résultat trouvé",
+        "Local file issue"                  : "Problème de fichier local",
+        "Top of Page"                       : "Haut de la page",
+        "Feedback"                          : "Commentaire",
+        "Link"                              : "Lien",
+		"Go to Product page"                : "Aller à la page du produit",
+		"Download trial"                    : "Télécharger la version d’évaluation",
+        "Please provide your feedback about this Help topic." : "Veuillez nous faire part de vos commentaires concernant cette Rubrique d'aide.",
+		MODIFIED                            : function(modifiedDate) { return "Dernière modification: " + modifiedDate;},
+		FOOTER                              : function(title,version) { return "&nbsp;Aide sur le Web pour " + title + (version ? " " + version : "") + ".";}
+	};
+
+
