@@ -15,13 +15,36 @@ Rank by likely impact and verifiability, not by keyword excitement. Prefer one s
 
 When evidence suggests a bug, actively infer how exploitation would work if the suspected server-side control is missing. This reasoning should be concrete enough for authorized validation, but not weaponized.
 
-Allowed exploit reasoning:
+Allowed exploit reasoning and validation:
 
 - Request templates with placeholders for cookies, tokens, object IDs, tenant IDs, emails, and reversible test values.
 - Read-only checks, self-account checks, cross-account checks using user-owned authorized test accounts, and reversible state changes.
 - Clear expected secure behavior, vulnerable signal, and stop conditions.
+- Running a minimal validation request when authorization, scope, accounts, and safe test data are available.
+- Promoting reproduced issues to confirmed findings with exact request/response evidence.
 
 Do not produce operational exploit steps that steal data, alter another real user's account, bypass payment for real services, persist access, brute force credentials/tokens, exploit third-party infrastructure, or cause disruption. In those cases, provide a bounded safe validation plan instead.
+
+## Validate Then Promote
+
+If a hypothesis is strong and the user has provided sufficient authorization context, validate it before final triage.
+
+Required validation gates:
+
+- Explicit in-scope asset.
+- Test class allowed by program rules.
+- User-owned account/session/token, or a public unauthenticated endpoint where validation is non-invasive.
+- User-owned target objects, tenants, carts, files, orders, emails, webhooks, redirects, or reversible workflow items.
+- One clear baseline request and one manipulated request, unless a single request is enough for an information disclosure finding.
+- Stop condition that prevents unauthorized data access, irreversible state change, real payment impact, third-party impact, or service disruption.
+
+Promotion rules:
+
+- `Confirmed`: vulnerable behavior reproduced with exact request/response, timestamp/context, and impact using authorized data.
+- `Ready`: fileable without exploit execution, such as exposed source maps with `sourcesContent`, public debug metadata, or verified non-sensitive exposure.
+- `Needs test`: exploit path is credible but validation was not run or lacked required context.
+- `Weak`: signal lacks reachability, control boundary, or impact.
+- `Discarded`: server enforced the control, asset was out of scope, behavior is expected, or validation would be unsafe.
 
 ## Reasoning Loop
 
@@ -52,8 +75,15 @@ Do not produce operational exploit steps that steal data, alter another real use
    - Include a minimal PoC only when it is safe, authorized, and based on concrete evidence.
    - Prefer request templates with placeholders for cookies, object IDs, and tenants instead of live secrets.
 
-6. Decide report readiness.
-   - `Ready`: reproduced with evidence and impact.
+6. Validate and promote.
+   - Execute minimal safe validation when the gates are satisfied.
+   - Compare baseline and manipulated responses.
+   - Promote confirmed vulnerabilities to finding drafts.
+   - Keep unvalidated exploit paths as hypotheses.
+
+7. Decide report readiness.
+   - `Confirmed`: reproduced with evidence and impact.
+   - `Ready`: fileable non-invasive exposure.
    - `Needs test`: strong path but not reproduced.
    - `Weak`: speculative keyword or no reachable endpoint.
    - `Discard`: out of scope, third party, expected behavior, or blocked by server control.
@@ -66,6 +96,7 @@ Do not produce operational exploit steps that steal data, alter another real use
 - Evidence sources:
 - Tools/evidence used:
 - Ready findings:
+- Confirmed findings:
 - Needs-test hypotheses:
 - Weak/discarded items:
 - Required user input:
@@ -83,6 +114,9 @@ Do not produce operational exploit steps that steal data, alter another real use
 ## Exploit Paths
 | Rank | Status | Actor | Preconditions | Exploit chain | Missing proof | Stop conditions |
 
+## Validation Results
+| Rank | Test | Baseline evidence | Manipulated evidence | Decision | Finding status |
+
 ## Best Next Test
 - Target:
 - Actor/account:
@@ -93,20 +127,24 @@ Do not produce operational exploit steps that steal data, alter another real use
 
 ## Exploitability / Safe PoC
 ### PoC: <finding title>
-- Status: Ready / Needs test / Weak
+- Status: Confirmed / Ready / Needs test / Weak / Discarded
 - Exploit chain:
 - Preconditions:
 - Why exploitation may be possible:
 - Minimal safe request:
+- Baseline evidence:
+- Manipulated request evidence:
 - Expected secure behavior:
 - Vulnerable behavior if confirmed:
 - Stop conditions:
 
 ## Concrete Finding Drafts
 ### Finding: <title>
-- Status: Ready / Needs test
+- Status: Confirmed / Ready / Needs test
 - Affected asset:
+- Vulnerability class:
 - Evidence:
+- Reproduction:
 - Exploitability:
 - Safe PoC:
 - Security impact:

@@ -27,7 +27,7 @@ This repository contains reusable bug bounty hunting skills. When working in thi
    - Hypothesis: a testable vulnerability idea that still needs validation.
    - Exploit reasoning: a concrete but unconfirmed path from actor, precondition, request, missing server-side control, vulnerable signal, and impact.
 
-5. Do not claim a vulnerability is confirmed unless the user provides reproduction evidence or asks you to help create a validation plan.
+5. Do not claim a vulnerability is confirmed unless the agent or user has reproduction evidence. If the user has supplied authorized scope, program rules, and suitable test accounts/objects, the agent may run safe validation and promote confirmed results to findings.
 
 6. When JavaScript analysis reveals bug-like signals, automatically reason about exploitability. Do not stop at "interesting endpoint." For each strong signal, derive:
    - Actor and privilege level required.
@@ -63,6 +63,37 @@ Prefer this order:
 4. Vulnerability validation last: use safe, minimal, reversible test cases with user-provided accounts/tokens.
 
 Exploit reasoning is allowed before validation, but only as a bounded analysis artifact. Keep exploit content scoped to authorized targets, use placeholders for credentials/object IDs, and prefer read-only or reversible test cases. If the likely exploit would require stealing data, changing another user's account, bypassing payment for real services, credential attacks, persistence, or disruption, output a safe validation plan instead of operational exploit steps.
+
+### Exploit Validation To Finding
+
+When a strong hypothesis has enough authorization context, validate it instead of stopping at theory.
+
+Allowed validation requirements:
+
+- The asset is explicitly in scope.
+- Program rules do not prohibit the test class.
+- The request is low-impact, reversible, or read-only.
+- Authentication material is user-provided or captured from the user's own authorized session.
+- Object IDs, tenants, emails, files, webhooks, redirects, orders, carts, invoices, and roles used in the test belong to the user or authorized test accounts.
+- The validation has clear stop conditions before accessing unauthorized data, causing real financial effects, or changing production state irreversibly.
+
+Validation loop:
+
+1. Build the minimal request or browser action from evidence.
+2. Execute one controlled baseline request when needed.
+3. Execute one manipulated request that tests the missing server-side control.
+4. Compare status code, response body shape, headers, object ownership, and state change.
+5. If the vulnerable signal is observed, mark the item `Ready` and write a finding draft.
+6. If the server blocks it, mark `Discarded` or `Weak` with the exact blocking evidence.
+7. If proof would require unsafe impact, stop and keep it as `Needs test` with a safe validation plan.
+
+Finding promotion criteria:
+
+- `Confirmed`: reproduced with exact request/response evidence and clear impact using authorized test data.
+- `Ready`: fileable without invasive testing, such as source map exposure, public debug metadata, or verified non-sensitive information exposure.
+- `Needs test`: exploit path is strong but not reproduced.
+- `Weak`: signal exists but lacks reachability, auth context, or impact.
+- `Discarded`: out of scope, blocked by server control, duplicate, expected behavior, or unsafe to validate.
 
 ### Tool Selection Rules
 
@@ -246,18 +277,32 @@ Then include detailed sections:
 ## 4. Ranked Hypotheses
 | Rank | Status | Class | Finding/Hypothesis | Evidence | Exploitability / PoC | Safe validation | Impact if confirmed |
 
-## 5. Exploit Reasoning And Safe PoCs
+## 5. Exploit Validation And Findings
 ### PoC: <finding title>
-- Status: Ready / Needs test / Weak
+- Status: Confirmed / Ready / Needs test / Weak / Discarded
 - Exploit chain: <actor -> precondition -> request/control bypass -> vulnerable signal -> impact>
 - Preconditions: <required account, role, tenant, object ownership, token, feature flag>
 - Why exploitation may be possible: <specific missing server-side control inferred from evidence>
 - Minimal safe request or browser steps: <non-destructive validation only>
+- Baseline evidence:
+- Manipulated request evidence:
 - Expected secure behavior:
 - Vulnerable behavior if confirmed:
 - Safety limits:
 
-## 6. Follow-Up Plan
+## 6. Confirmed Finding Drafts
+### Finding: <title>
+- Status: Confirmed / Ready
+- Affected asset:
+- Vulnerability class:
+- Evidence:
+- Reproduction steps:
+- Exploitability:
+- Security impact:
+- Safety notes:
+- Remediation:
+
+## 7. Follow-Up Plan
 | Priority | Action | Needed input | Tool/manual path |
 
 ## Appendix: Raw Counts
@@ -265,7 +310,8 @@ Then include detailed sections:
 
 Status values:
 
-- `Ready`: enough evidence to file as information disclosure or a clear non-invasive issue, or reproduced by user-provided evidence.
+- `Confirmed`: reproduced during this run or by user-provided evidence with exact request/response proof and clear impact.
+- `Ready`: enough evidence to file as information disclosure or a clear non-invasive issue.
 - `Needs test`: strong hypothesis, not reproduced yet.
 - `Weak`: interesting but speculative.
 - `Discarded`: out of scope, blocked by server control, duplicate, expected behavior, or insufficient evidence.

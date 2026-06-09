@@ -47,6 +47,31 @@ Example placeholders:
 - Business impact in terms of data, money, privilege, or availability.
 - No unnecessary sensitive data exposure in the report.
 
+## Finding Promotion Checklist
+
+Promote a hypothesis to a finding only when one of these is true:
+
+- `Confirmed`: validation was reproduced using authorized test data and includes baseline evidence, manipulated evidence, vulnerable signal, and impact.
+- `Ready`: the issue is directly observable without invasive exploitation, such as exposed source maps with original source, public debug metadata, or public non-sensitive information exposure with clear security relevance.
+
+Do not promote when:
+
+- The only evidence is a JS string or endpoint name.
+- Server-side authorization has not been tested and impact depends on it.
+- The test would require another real user's data, real payment/refund, destructive workflow, brute force, persistence, social engineering, or third-party impact.
+- The server returns 401/403/404, ignores sensitive fields, recomputes sensitive values, or otherwise enforces the expected control.
+
+For confirmed findings, include:
+
+- Target URL/host and exact endpoint.
+- Account/role context, without secrets.
+- Baseline request summary.
+- Manipulated request summary.
+- Response/status/body difference.
+- Impact using authorized data.
+- Stop condition observed or respected.
+- Remediation mapped to the missing server-side control.
+
 ## Common Discards
 
 - Endpoint string exists but is not reachable.
