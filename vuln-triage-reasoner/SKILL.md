@@ -158,6 +158,14 @@ Promotion rules:
 - Impact:
 - Remediation:
 
+## Final Summary
+- Tìm được gì:
+- Finding confirmed/ready:
+- Hypothesis cần test:
+- Điểm bị loại hoặc bị server chặn:
+- Cần làm gì thêm:
+- Input cần từ user:
+
 ## Discarded / Deprioritized
 ```
 

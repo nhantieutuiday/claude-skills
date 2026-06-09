@@ -322,6 +322,14 @@ Then include detailed sections:
 ## 7. Follow-Up Plan
 | Priority | Action | Needed input | Tool/manual path |
 
+## 8. Final Summary
+- Tìm được gì:
+- Finding confirmed/ready:
+- Hypothesis cần test:
+- Điểm bị loại hoặc bị server chặn:
+- Cần làm gì thêm:
+- Input cần từ user:
+
 ## Appendix: Raw Counts
 ```
 
@@ -345,6 +353,15 @@ Finding quality rules:
 - Include exploitability details when evidence supports them, but keep PoCs minimal, scoped, non-destructive, and reproducible with user-owned test accounts.
 - Do not provide PoCs that steal data, bypass payment for real services, alter other users' accounts, persist access, brute force credentials/tokens, exploit third-party infrastructure, or cause service disruption.
 - If a potentially exploitable path requires privileged credentials, victim interaction, destructive state change, or access to another user's data, output a safe validation plan instead of a weaponized exploit.
+
+Final summary rules:
+
+- End every report with a concise Vietnamese summary.
+- State what was actually found, not just what was scanned.
+- Separate `confirmed/ready findings`, `needs-test hypotheses`, `weak leads`, and `discarded/blocked items`.
+- Include the exact next actions needed to turn hypotheses into findings.
+- Mention missing inputs such as test accounts, roles, tenant pairs, auth tokens, HAR/Burp traffic, APK/IPA files, or program-rule clarification.
+- If nothing significant was found, say that clearly and list the highest-value follow-ups.
 
 ## Safety Rules
 

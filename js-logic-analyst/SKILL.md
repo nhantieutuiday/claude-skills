@@ -71,6 +71,13 @@ For each candidate, derive:
 ## False Positive Checks
 - Expected server controls:
 - Missing evidence:
+
+## Final Summary
+- Tìm được gì:
+- Exploit path mạnh nhất:
+- Hypothesis cần test:
+- Cần làm gì thêm:
+- Input cần từ user:
 ```
 
 ## References

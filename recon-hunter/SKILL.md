@@ -76,6 +76,12 @@ Use this structure for final recon output:
 ## Open Questions
 
 ## Next Recon Commands
+
+## Final Summary
+- Tìm được gì:
+- Ưu tiên cao nhất:
+- Cần làm gì thêm:
+- Input cần từ user:
 ```
 
 ## References

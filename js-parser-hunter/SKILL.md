@@ -84,6 +84,13 @@ Use the JSON output as evidence, then reason about:
 
 ## Hypotheses To Send To Triage
 - Include actor, object boundary, suspected missing server-side control, and a safe validation idea for each P1/P2 hypothesis.
+
+## Final Summary
+- Tìm được gì:
+- Endpoint/logic đáng chú ý nhất:
+- Hypothesis cần test:
+- Cần làm gì thêm:
+- Input cần từ user:
 ```
 
 ## References
